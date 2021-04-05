@@ -1,0 +1,439 @@
+/* @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300'); */
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    color: white;
+}
+
+header{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 4em;
+    width: 100%;
+}
+
+header #logo{
+    width: 25%;
+    height: 5vh;
+    background-color: white;
+    position: center;
+    border-radius: 25px;
+}
+
+header a{
+    margin-top: 1%;
+}
+/* headings and logo */
+
+h1, h2{
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white; 
+} 
+
+#logo{
+    /* font-size: 280%; */
+    margin-left: 30px;
+}
+
+/* navigation links */
+
+#menu{
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+/* #logo, #menu{
+    line-height: 75px;
+} */
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+    height: 10px;
+}
+
+#menu a:hover{
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active{
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Hero image and cover text */
+
+#hero-outer{
+    /* height:90vh; */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image{
+    height:100vh;
+    width: 100%;
+    background: url("/assets/images/big_band.jpg") no-repeat center center; 
+
+     /* Animates zoom effect on loading the page  */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+} 
+
+/* Creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+ #cover-text, #cover-text h2 {
+    color: #ffffff;
+}
+
+#cover-text {
+    font-size: 180%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+
+    width: 40%;
+    height: auto;
+
+    padding:10px;
+
+    background-color: rgba(85, 81, 81, 0.8);
+
+    bottom: 50%;
+    right: 0;
+
+    position: absolute;
+
+} 
+
+/* Club ethos */
+
+ main{
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: red;
+}
+
+.container{
+    background-color: pink;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  
+  .child{
+    border: 2px solid blue;
+    width: 30%;
+    height: 30vh;
+    
+  }
+
+/* #left-about{
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+} */
+
+/*#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+} */
+
+/* Club ethos center image */
+
+ #welcome {
+    /* margin: 20px 0; */
+    text-align: center;
+    font-size: 280%;
+}
+
+/*#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#circle-cover-bg {
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Event times */
+
+/* #times{
+    background-image: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0,0,0, .6);
+    width: 20%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+#times h2 {
+    color: #fafafa;
+} */
+
+/* Footer */
+
+footer{
+    height: 2%;
+    background-color: black;
+    /* bottom: 0; */
+}
+
+.social-networks{
+    text-align: center;
+    width: 100%;
+}
+
+.social-networks li{
+    display: inline;
+}
+
+.social-networks i{
+    font-size: 260%;
+    margin: 1%;
+    padding: 1% 5%;
+    color: white;
+    height: 100px;
+}
+
+/* Gallery Photos */
+
+/* #photo {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0px;
+}
+
+#photo img{
+    width: 100%;
+} */
+
+/* Form */
+
+/* .form-section {
+    clear: left;
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.signup-form{
+    margin-top: 150px;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
+
+.signup-form h2{
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input{
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+
+.text-input:hover{
+    border-color: #f16c6b;
+}
+
+.join-button{
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #f16c6b;
+    color: #fafafa;
+    display: block;
+}
+
+.join-button:hover{
+    background-color: #fafafa;
+    color:#f16c6b;
+} */
+
+/* Media queries */
+
+/* For large to medium screens sizes from 1200px wide and down */
+/* @media screen and (max-width: 1200px){
+    #club-ethos{
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin-top: 0;
+    }
+
+    #left-about, #right-about {
+        width:100%;
+        float:left;
+        padding: 0;
+    }
+
+    #center-about{
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #times div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
+ */
+/* For medium screens sizes from 950px wide and down */
+/* @media screen and (max-width: 950px){
+
+    #menu{
+        clear: left;
+        float: left;
+        margin-left: 30px; 
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-text{
+        left:0px;
+    }
+
+    #club-ethos{
+        width:90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading{
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p{
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+
+    #photo{
+        column-count: 3;
+    }
+} */
+
+/* For small screens sizes from 800px wide and down */
+/* @media screen and (max-width: 800px){
+    #photo{
+        column-count: 2;
+    }
+} */
