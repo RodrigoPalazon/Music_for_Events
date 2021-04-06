@@ -4,6 +4,7 @@
     margin:0;
     padding:0;
     border:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -18,8 +19,8 @@ header{
     align-items: center;
     background-color: black;
     color: white;
-    height: 4em;
-    width: 100%;
+    height: auto;
+    /* width: 1000vw; */
 }
 
 header #logo{
@@ -80,39 +81,20 @@ h1, h2{
 
 /* Hero image and cover text */
 
-#hero-outer{
+section#back-photo{
     /* height:90vh; */
     width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#hero-image{
     height:100vh;
-    width: 100%;
+    /* overflow: hidden;
+    position: relative; */
+    /* display: inline-block; */
     background: url("/assets/images/big_band.jpg") no-repeat center center; 
-
-     /* Animates zoom effect on loading the page  */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-} 
-
-/* Creates the level of zoom for hero image */
-@keyframes hero-zoom {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.1);
-    }
 }
-
  #cover-text, #cover-text h2 {
     color: #ffffff;
 }
 
-#cover-text {
+div#cover-text h2{
     font-size: 180%;
     font-family: Oswald;
     text-transform: uppercase;
@@ -139,25 +121,52 @@ h1, h2{
     clear: both;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: red;
+    background-color: black;
 }
 
 .container{
-    background-color: pink;
+    background-color: black;
     width: 100%;
     height: 50vh;
     display: flex;
     justify-content:center;
     align-items: center;
+    /* flex-direction: column; */
   }
   
   .child{
     border: 2px solid blue;
     width: 30%;
-    height: 30vh;
-    
+    height: auto;
   }
 
+  /* @media screen and (max-width:375px){
+    .container{
+        background-color: black;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .child{
+        border: 2px solid blue;
+        width: 90%;
+        height: auto;
+      }
+  } */
+
+  .child img{
+      width: 100%;
+      height: auto;
+      min-height: 70%;
+  }
+
+  .child h3, .child p{
+      text-align: center
+  }
 /* #left-about{
     padding-top: 30px;
     width: 33%;
