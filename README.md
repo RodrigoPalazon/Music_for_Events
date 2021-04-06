@@ -1,1 +1,3 @@
-#Music for Events - Agency.
+# Music for Events - Agency.
+
+Starting the project.
