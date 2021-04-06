@@ -10,6 +10,9 @@
 body{
     font-family: Lato, sans-serif;
     color: white;
+    /* display: flex;
+    justify-content:center;
+    flex-direction: column; */
 }
 
 header{
@@ -36,11 +39,12 @@ header a{
 }
 /* headings and logo */
 
-h1, h2{
+h2{
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: white; 
+    padding: 3%;
 } 
 
 #logo{
@@ -82,15 +86,12 @@ h1, h2{
 /* Hero image and cover text */
 
 section#back-photo{
-    /* height:90vh; */
     width: 100%;
     height:100vh;
-    /* overflow: hidden;
-    position: relative; */
-    /* display: inline-block; */
     background: url("/assets/images/big_band.jpg") no-repeat center center; 
 }
- #cover-text, #cover-text h2 {
+
+#cover-text h2 {
     color: #ffffff;
 }
 
@@ -122,6 +123,16 @@ div#cover-text h2{
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+main h2{
+    color:#b18700;
+    text-shadow: 1px -1px 1px white;
 }
 
 .container{
@@ -133,30 +144,56 @@ div#cover-text h2{
     align-items: center;
     /* flex-direction: column; */
   }
-  
+
   .child{
     border: 2px solid blue;
     width: 30%;
-    height: auto;
+    min-height: 45%;
   }
 
-  /* @media screen and (max-width:375px){
+  .child h3{
+      padding: 2%;
+      font-size: 2em;
+  }
+
+  .child p{
+    padding: 0 2% 2%;
+}
+
+   .child input{
+    background-color: #b18700;
+    /* border: groove; */
+    border-radius: 30%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin-top: 5%;
+    cursor: pointer;
+    margin-bottom: 4%;
+    display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+  @media screen and (max-width: 1024px){
     .container{
         background-color: black;
-        width: 100%;
-        height: 50vh;
+        height: auto;
         display: flex;
         justify-content:center;
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
+        padding-top: 3%;
     }
     .child{
         border: 2px solid blue;
         width: 90%;
-        height: auto;
       }
-  } */
+  }
 
   .child img{
       width: 100%;
@@ -217,7 +254,6 @@ hr {
 /* Club ethos center image */
 
  #welcome {
-    /* margin: 20px 0; */
     text-align: center;
     font-size: 280%;
 }
@@ -271,7 +307,6 @@ hr {
 footer{
     height: 2%;
     background-color: black;
-    /* bottom: 0; */
 }
 
 .social-networks{
