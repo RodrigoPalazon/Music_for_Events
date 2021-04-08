@@ -607,3 +607,85 @@ section#about_us p{
         padding: 8% 3% 3%;
     }
 } */
+
+
+/* *************************************************
+            PRICES PAGE
+*****************************************************/
+
+.title_section_product{
+    background-color: #ffc400;
+    border: none;
+    width: 99vw;
+    text-align: center;
+    /* height: auto; */
+}
+
+.container_product article{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.title_section_product h3{
+    clear: both;
+    font-size: 3.5em;
+    color:black;
+    text-shadow: 1px -1px 1px white;
+    margin-top: -2%;
+    margin-bottom: 5%;
+}
+
+div.child_container_product{
+    width: 90%;
+    height: auto;
+    border: 1px solid red;
+}
+
+.container_product article #text_live_bands{
+    width: 90%;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 32px;
+}
+
+#text_live_bands p:last-child{
+    margin-bottom: 5%;
+    /* background-color: #b18700; */
+}
+
+.container_product article .subTitle_section_product{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_product article .subTitle_section_product h3{
+    font-size: 3em;
+    color: #ffc400;
+    text-shadow: 1px -1px 1px white;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.container_product article .subTitle_section_product p{
+    font-size: 1.2em;
+    width: 90%;
+    text-align: center;
+}
+
+.container_product article div.child_container_product:nth-of-type(odd){
+    background-color: rgb(47, 47, 47);
+}
+
+
+.container_product article div.child_container_product img{
+    width:20%;
+    height: auto;
+}
+
+.child_container_product p{
+    font-size: 1em;
+}
