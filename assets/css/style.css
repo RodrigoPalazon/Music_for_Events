@@ -628,19 +628,33 @@ section#about_us p{
     flex-direction: column;
 }
 
+.title_section_product{
+    margin-bottom: 2%;
+    margin-top: 7%;
+}
+
 .title_section_product h3{
-    clear: both;
     font-size: 3.5em;
     color:black;
     text-shadow: 1px -1px 1px white;
-    margin-top: -2%;
-    margin-bottom: 5%;
+    /* float: right; */
 }
 
 div.child_container_product{
     width: 90%;
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: rgb(54, 54, 54);
+    display: flex;
+}
+
+.child_container_product h4{
+    font-size: 2.5em;
+
+}
+
+.container_product article div.child_container_product:nth-of-type(odd){
+    background-color: rgb(51, 42, 11);
 }
 
 .container_product article #text_live_bands{
@@ -676,16 +690,24 @@ div.child_container_product{
     text-align: center;
 }
 
-.container_product article div.child_container_product:nth-of-type(odd){
-    background-color: rgb(47, 47, 47);
-}
 
 
-.container_product article div.child_container_product img{
+
+div.child_container_product img{
     width:20%;
     height: auto;
+    float: left;
+    margin-right: 4%
+}
+
+div.child_container_product aside img{
+    width:100%;
+    height: auto;
+    float: left;
+    margin-right: 4%
 }
 
 .child_container_product p{
     font-size: 1em;
+    padding: 2%;
 }
