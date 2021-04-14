@@ -10,6 +10,7 @@
 body{
     font-family: Lato, sans-serif;
     color: white;
+    background-color: black;
     /* display: flex;
     justify-content:center;
     flex-direction: column; */
@@ -119,8 +120,8 @@ div#cover-text h2{
 
  main{
     clear: both;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    padding-bottom: 8%;
     background-color: black;
     display: flex;
     justify-content:center;
@@ -386,62 +387,32 @@ ul.social-networks{
     list-style-type: none;
 }
 
-
+/* ****************************************************************
+                        CONTACT PAGE
+*******************************************************************/
 /* Form */
 
-/* .form-section {
-    clear: left;
-    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 900px;
+ .form-section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 3% 0;
 }
 
-.signup-form{
-    margin-top: 150px;
-    color: #fff;
-    background-color: rgba(60, 60, 60, 0.6);
-    max-width: 400px;
-    position: absolute;
-    left: 10%;
-    padding: 30px;
+form label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 1.5em;
+    color: #ffc400;
 }
 
-.signup-form h2{
-    color: #fafafa;
-    margin-bottom: 20px;
+form #submit{
+    background-color: #ffc400;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.text-input{
-    background: transparent;
-    color: #fafafa;
-    width: 100%;
-    height: 25px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-}
-
-
-.text-input:hover{
-    border-color: #f16c6b;
-}
-
-.join-button{
-    margin-top: 20px;
-    border-radius: 2px;
-    padding: 15px 32px 15px 32px;
-    text-align: center;
-    font-size: 100%;
-    background-color: #f16c6b;
-    color: #fafafa;
-    display: block;
-}
-
-.join-button:hover{
-    background-color: #fafafa;
-    color:#f16c6b;
-} */
 
 /* Media queries */
 
@@ -552,21 +523,12 @@ section#about_us img{
 }
 
 section#about_us div{
-    /* width: 50%;
-    display: flex;
-    justify-content:center;
-    flex-direction: column; */
-    /* background-color: pink; */
     text-align: center;
     width: 80%;
     margin-bottom: 5em;
 }
 
 section#about_us h3{
-    /* font-size: 3em;
-    text-align: center;
-    margin-bottom: 0.5em; */
-    /* margin-top: 1em; */
     font-size: 3em;
     color:#ffc400;
     text-shadow: 1px -1px 1px white;
@@ -584,31 +546,6 @@ section#about_us p{
 }
 
 
-/* 
-@media screen and (max-width: 1025px){
-    section#our_mission{
-        display: flex;
-        justify-content:center;
-        flex-wrap: wrap;
-    }
-
-    section#our_mission div{
-        
-        text-align: center;
-        width: 80%;
-        margin-bottom: 5em;
-    }
-
-    section#our_mission h3{
-        font-size: 3em;
-        color:#ffc400;
-        text-shadow: 1px -1px 1px white;
-        margin-bottom: 3%;
-        padding: 8% 3% 3%;
-    }
-} */
-
-
 /* *************************************************
             PRICES PAGE
 *****************************************************/
@@ -616,9 +553,8 @@ section#about_us p{
 .title_section_product{
     background-color: #ffc400;
     border: none;
-    width: 99vw;
+    width: 100vw;
     text-align: center;
-    /* height: auto; */
 }
 
 .container_product article{
@@ -628,7 +564,7 @@ section#about_us p{
     flex-direction: column;
 }
 
-.title_section_product{
+.title_section_product:not(:first-child){
     margin-bottom: 2%;
     margin-top: 7%;
 }
@@ -637,13 +573,11 @@ section#about_us p{
     font-size: 3.5em;
     color:black;
     text-shadow: 1px -1px 1px white;
-    /* float: right; */
 }
 
 .child_container_product{
     width: 70%;
     height: auto;
-    /* border: 1px solid red; */
     background-color: rgb(54, 54, 54);
     display: flex;
 }
@@ -657,17 +591,18 @@ section#about_us p{
     background-color: rgb(51, 42, 11);
 }
 
+strong{
+    font-size: 1.2em;
+}
+
 .container_product article #text_live_bands{
     width: 90%;
     font-size: 1.5em;
     text-align: center;
     line-height: 32px;
+    padding-top: 7%;
 }
 
-#text_live_bands p:last-child{
-    margin-bottom: 5%;
-    /* background-color: #b18700; */
-}
 
 .container_product article .subTitle_section_product{
     display: flex;
@@ -684,10 +619,15 @@ section#about_us p{
     margin-bottom: 0;
 }
 
-.container_product article .subTitle_section_product p{
+.subTitle_section_product p{
     font-size: 1.2em;
     width: 90%;
     text-align: center;
+    width: 71%;
+}
+
+.subTitle_section_product p:last-child{
+    margin-bottom: 2%
 }
 
 div.child_container_product{
@@ -713,19 +653,25 @@ div.child_container_product h4{
 }
 
 div.child_container_product img{
-    width:30%;
-    /* min-width: 29%; */
-    max-height: 25em;
-    /* float: right; */
-    /* margin-right: 4%; */
+    width:50%;
 }
 
-/* div.child_container_product aside {
+#classicDiv div{
+    padding: 0px;
+}
+
+#classicImg{
     width:100%;
-    height: auto;
-    float: right;
-    margin-right: 4%;
-} */
+    height: 70vh;
+}
+
+.child_container_product_classic h4{
+    padding-top: 1%;
+}
+
+.child_container_product_classic p{
+    padding: 2%;
+}
 
 .child_container_product p{
     text-indent: 6%;
@@ -746,4 +692,31 @@ div.child_container_product img{
 
 .child_container_product p{
     font-style: italic;
+}
+
+
+
+/* ****************************************************************
+                        THANK YOU PAGE
+*******************************************************************/
+
+#main_thankYou_page{
+    width: 100%;
+    height: 90vh;
+    /* background-color: white; */
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.5em;
+    padding-top: 15%;
+}
+
+#main_thankYou_page a{
+    width: 50%;
+}
+
+#main_thankYou_page img{
+    width: 100%;
+    height:auto
 }
