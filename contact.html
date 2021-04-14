@@ -1,76 +1,127 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Music for Events</title>
-   
-     <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
   </head>
-<body>
+  <body>
     <header>
-        <a href="index.html">
-            <img id="logo" src="assets/images/LOGO_NoBackground.png">
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a class="active" href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a  href="prices.html">Prices</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
+      <a href="index.html">
+        <img id="logo" src="assets/images/LOGO_NoBackground.png" />
+      </a>
+      <nav>
+        <ul id="menu">
+          <li>
+            <a class="active" href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="prices.html">Prices</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
 
-                <li>
-                    <a  href="index.html">Home</a>
-                </li>
-            </ul>
-        </nav>
-     </header>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section id="back-photo">
-        <div id="cover-text">
-            <h2>CONTACT US</h2>
-        </div>
+      <div id="cover-text">
+        <h2>CONTACT US</h2>
+      </div>
     </section>
-     <section class="form-section">
-        <form class="signup-form" method="POST" action="https://formdump.codeinstitute.net/
- "><i class="fas fa-heartbeat"></i>
-             <h2>Let's get you signed up!</h2>
-             <label for="fname">First Name</label>
-             <input id="fname" class="text-input" type="text" name="first_name" required>
-             
-             <label for="lname">Last Name</label>
-             <input id="lname" class="text-input" type="text" name="last_name" required>
-             
-             <label for="email">Email Address</label>
-             <input id="email" class="text-input" type="email" name="email_address" required>
-             
-             <label for="road">Road</label>
-             <input id="road" type="radio" name="running_preference" value="road" required>
-             
-             <label for="trail">Trail</label>
-             <input id="trail" type="radio" name="running_preference" value="trail">
-             
-             <label for="both">Both</label>
-             <input id="both" type="radio" name="running_preference" value="both">
-             
-             <input class="join-button" type="submit" value="Let's Run!">
-         </form>
-    </section> 
+    <section class="form-section">
+        <form action="https://formsubmit.co/palazonbatera@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://musicforevents.nl/thankyou.html">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName4">Name</label>
+            <input type="text" name="name" class="form-control" id="inputName4" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" name="email" class="form-control" id="inputEmail4" required>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputAddress">City</label>
+            <input
+              type="text"
+              name="city"
+              class="form-control"
+              id="inputAddress"
+              placeholder="What city your event will happen?"
+              required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputTel4">Phone</label>
+            <input type="tel" name="phone" class="form-control" id="inputTel4" />
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label for="comment" >Comment:</label>
+            <textarea name="user_message" id="comment" class="form-control" 
+                    cols="20" rows="5" placeholder="Add more details about your event.">
+            </textarea>
+          </div>
+
+          <input id="submit" type="submit"  class="btn btn-primary col-md-12" value="Submit" >
+      </form>
+    </section>
+
+   
     <footer>
-        <ul class="social-networks">
-                <li><a href="https://www.facebook.com/musicforeventsNL" target="_blank"><i class="fab fa-facebook-square" title="Facebook"></i></a></li>
-                <li><a href="https://twitter.com/MusicforeventsN" target="_blank"><i class="fab fa-twitter-square" title="Twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCHrcgxMp3AtVHSwPbXfGu2g" target="_blank"><i class="fab fa-youtube" title="Youtube"></i></a></li>
-                <li><a href="https://www.instagram.com/musicforevents.nl/" target="_blank"><i class="fab fa-instagram" title="instagram"></i></a></li>
-                <li><a href="contact.html" target="_blank"><i class="far fa-envelope" title="Contact Us"></i></a></li>
-            </ul>
-    </footer> 
-     <script src="https://kit.fontawesome.com/3982258271.js"></script>
+      <ul class="social-networks">
+        <li>
+          <a href="https://www.facebook.com/musicforeventsNL" target="_blank"
+            ><i class="fab fa-facebook-square" title="Facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/MusicforeventsN" target="_blank"
+            ><i class="fab fa-twitter-square" title="Twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCHrcgxMp3AtVHSwPbXfGu2g"
+            target="_blank"
+            ><i class="fab fa-youtube" title="Youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/musicforevents.nl/" target="_blank"
+            ><i class="fab fa-instagram" title="instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="contact.html" target="_blank"
+            ><i class="far fa-envelope" title="Contact Us"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/3982258271.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Script to load the helper code for this project in repl.it. Do not edit -->
     <!--<script src="https://kit.fontawesome.com/3982258271.js"></script>
     <script src="index.js"></script> -->
-    </body>
-    </html>
+  </body>
+</html>
