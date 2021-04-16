@@ -11,19 +11,17 @@ body{
     font-family: Lato, sans-serif;
     color: white;
     background-color: black;
-    /* display: flex;
-    justify-content:center;
-    flex-direction: column; */
 }
 
 header{
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center !important;
+    align-content: center !important;
     background-color: black;
     color: white;
-    height: auto;
+    /* height: auto; */
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -31,44 +29,31 @@ header{
 }
 
 header img#logo{
-    min-width: 100%;
     height: 5em;
-    /* background-color: white; */
-    /* position: center; */
     border-radius: 25px;
     margin-left: 30px;
 }
 
 header a{
-    display:block;
-    width:10%;
-    /* height: 2em; */
+    display:inline;
+    width:16%;
 }
 
 
 header nav ul a{
     width:100%;
 }
-/* headings and logo */
+            /* headings and logo */
 
 h2{
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: white; 
-    padding: 3%;
+    /* color: white; 
+    padding: 3%; */
 } 
 
-/* navigation links */
-
-#menu{
-    font-size: 110%;
-    letter-spacing: 4px;
-}
-
-/* #logo, #menu{
-    line-height: 75px;
-} */
+            /* navigation links */
 
 #menu li {
     float: right;
@@ -79,7 +64,7 @@ h2{
 #menu a {
     text-decoration: none;
     color: inherit;
-    /* height: 10px; */
+    padding-left: 5%;
 }
 
 #menu a:hover{
@@ -87,40 +72,55 @@ h2{
 }
 
 a.active{
-    border-bottom: 3px solid #ffc400;
+    /* border-bottom: 3px solid #ffc400; */
+    /* margin-left: 18%; */
+    color:#ffc400 !important;
+} 
+
+/* ------------------------ --- */
+.nav-link{
+    margin-right: 10%;
+    font-size: 1.5em;
+    color:white !important;
+}
+
+
+.bg-dark{
+    background-color: black !important;
+    margin: 0 2% 0 0;
 }
 
 
 /* PRESENTATION BELOW THE NAV MENU*/
 
-section#back-photo{
+#back-photo{
     width: 100%;
     height:100vh;
     background: url("/assets/images/big_band.jpg") no-repeat center center; 
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
-div#cover-text h2{
-    font-size: 180%;
+#back-photo div{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+#back-photo h2{
+    font-size: 5em;
     font-family: Oswald;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    width: 40%;
+    width: 100%;
     height: auto;
-    padding:10px;
-    background-color: rgba(85, 81, 81, 0.8);
-    bottom: 50%;
-    right: 0;
-    position: absolute;
-    text-shadow: 2px -1px 2px black;
-    color: #ffffff;
-    z-index: 1;
+    padding:0px;
+    color: black;
+    text-align: center;
 } 
 
 /******  CONTAINER & CHILDREN  ******/
 
  main{
     clear: both;
-    /* padding-top: 20px; */
     padding-bottom: 8%;
     background-color: black;
     display: flex;
@@ -137,24 +137,23 @@ main h2{
     text-shadow: 1px -1px 1px white;
     margin-bottom: 3%;
     padding: 8% 3% 3%;
+    text-align: center;
+    font-size: 3em;
 }
+
 
 .container{
     background-color: black;
     width: 100%;
-    height: 50vh;
+    /* height: 150vh; */
     display: flex;
     justify-content:center;
     align-items: center;
-    /* flex-direction: column; */
   }
 
   .child{
-    /* border: 2px solid blue; */
-    width: 32%;
-    min-height: 45%;
-    /* border: 3px outset #b18700; */
-    padding: 2%;
+    width: 34%;
+    padding: 1%;
   }
 
   .child h3{
@@ -166,44 +165,38 @@ main h2{
     padding: 0 2% 2%;
 }
 
-   .child input, section#having_fun input, #about_us input{
+   .child input{
     background-color: #b18700;
-    /* border: groove; */
     border-radius: 30%;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    /* text-decoration: none; */
-    /* display: inline-block; */
     font-size: 1em;
-    margin-top: 5%;
     cursor: pointer;
-    margin-bottom: 4%;
+    margin-bottom: 15%;
     display: block;
     margin-right: auto;
     margin-left: auto;
     font-weight: 900;
 }
 
-/* .child #last_child{
-    margin-bottom: 15%;
-} */
-
 
 
 /* *****   HAVING FUN ***** */
 
-section#having_fun{
-    display: flex;
-    padding: 16% 3% 7%;
-    margin: 0px 300px;
+section#having_fun .container{
+    flex-direction: column-reverse;
+    text-align: center;
     width: 100%;
-    /* flex-wrap: wrap; */
+}
+
+section#having_fun .container div{
+    order: 2;
 }
 
 section#having_fun iframe{
     width: 100%;
-    height: 45vh; 
+    height: 80vh; 
     margin-right: 3%;
     border: 3px outset #b18700;
 }
@@ -222,14 +215,14 @@ section#having_fun h3{
 section#having_fun p{
     font-size: 1.2em;
     text-align: center;
-    /* margin-bottom: 2em; */
 }
 
 section#having_fun input{
     margin-top: 3em;
 }
 
-  @media screen and (max-width: 1024px){
+
+  @media screen and (max-width: 1025px){
     .container{
         background-color: black;
         height: auto;
@@ -241,9 +234,16 @@ section#having_fun input{
         padding-top: 3%;
     }
     .child{
-        /* border: 2px solid blue; */
         width: 90%;
       }
+    
+    .child input{
+        margin-bottom: 7%;
+    }
+
+    section#having_fun iframe{
+        height:50vh;
+    }
   }
 
   .child img{
@@ -255,108 +255,11 @@ section#having_fun input{
   .child h3, .child p{
       text-align: center
   }
-/* #left-about{
-    padding-top: 30px;
-    width: 33%;
-    float: left;
-} */
 
-/*#right-about {
-    padding-top: 30px;
-    width: 33%;
-    float: right;
-}
-
-#center-about {
-    width: 33%;
-    margin: 0 auto;
-}
-
-hr {
-    border-top: 1px solid #3a3a3a;
-    width: 100%;
-    margin: 5px 0;
-}
-
-.left-about-heading {
-    width: 60%;
-    float: right;
-    line-height: 20px;
-    clear: both;
-    margin-bottom: 50px;
-}
-
-.right-about-heading {
-    width: 60%;
-    float: left;
-    line-height: 20px;
-    clear: both;
-    margin-bottom: 50px;
-}
-
-.right-about-heading p {
-    text-align: right;
-}
-
-.right-about-heading h2 {
-    text-align: right;
-} */
-
-/* Club ethos center image */
-
- #welcome {
-    text-align: center;
-    font-size: 280%;
-}
-
-/*#circle-container {
-    width: 300px;
-    height: 300px;
-    padding: 30px;
-    border-style: solid;
-    border-color: #cccccc;
-    border-width: 1px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-#circle-cover-bg {
-    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png") no-repeat center center;
-    height: 100%;
-    border-radius: 50%;
-}
-
-/* Event times */
-
-/* #times{
-    background-image: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    overflow: hidden;
-}
-
-#times div {
-    color: #fafafa;
-    background-color: rgba(0,0,0, .6);
-    width: 20%;
-    height: 300px;
-    float: left;
-    padding: 30px 0 0 10px;
-    text-align: center;
-    border: 2px solid white;
-    box-sizing: border-box;
-}
-
-#times h2 {
-    color: #fafafa;
-} */
 
 /******************   FOOTER *************************/
 
 footer{
-    /* height: 2%; */
     background-color: rgb(24 24 24);;
 }
 
@@ -364,18 +267,16 @@ ul.social-networks{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    /* padding-top: 3em; */
     width: auto;
     padding: 1em;
+    margin-bottom: -1rem;
 }
 
 
 .social-networks i{
     font-size: 200%;
-    /* margin: 1%; */
     padding: 1% 5%;
     color: white;
-    /* height: 100px; */
     list-style-type: none;
 }
 
@@ -387,119 +288,9 @@ ul.social-networks{
     list-style-type: none;
 }
 
-/* ****************************************************************
-                        CONTACT PAGE
-*******************************************************************/
-/* Form */
-
- .form-section {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin: 3% 0;
-}
-
-form label{
-    display: inline-block;
-    margin-bottom: .5rem;
-    font-size: 1.5em;
-    color: #ffc400;
-}
-
-form #submit{
-    background-color: #ffc400;
-    color: black;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
 
-/* Media queries */
 
-/* For large to medium screens sizes from 1200px wide and down */
-/* @media screen and (max-width: 1200px){
-    #club-ethos{
-        width: 65%;
-        height: 1200px;
-        margin: 0 auto;
-    }
-
-    #welcome {
-        padding: 30px 0;
-        margin-top: 0;
-    }
-
-    #left-about, #right-about {
-        width:100%;
-        float:left;
-        padding: 0;
-    }
-
-    #center-about{
-        clear: both;
-        width: 100%;
-        float: left;
-        padding: 0;
-    }
-
-    #times div {
-        width: 100%;
-        clear: both;
-        height: 150px;
-        padding: 0;
-    }
-
-    hr {
-        display: none;
-    }
-}
- */
-/* For medium screens sizes from 950px wide and down */
-/* @media screen and (max-width: 950px){
-
-    #menu{
-        clear: left;
-        float: left;
-        margin-left: 30px; 
-        margin-bottom: 20px;
-        line-height: 25px;
-    }
-
-    #cover-text{
-        left:0px;
-    }
-
-    #club-ethos{
-        width:90%;
-        height: 1200px;
-        margin: 0 auto;
-    }
-
-    .left-about-heading, .right-about-heading{
-        width: inherit;
-    }
-
-    .left-about-heading h2, .right-about-heading h2{
-        width: 100%;
-        text-align: center;
-    }
-
-    .left-about-heading p, .right-about-heading p{
-        text-align: center;
-        padding: 0 20px 0 20px;
-    }
-
-    #photo{
-        column-count: 3;
-    }
-} */
-
-/* For small screens sizes from 800px wide and down */
-/* @media screen and (max-width: 800px){
-    #photo{
-        column-count: 2;
-    }
-} */
 
 /* #################################################### 
                 ABOUT PAGE 
@@ -507,7 +298,7 @@ form #submit{
 
 section#about_us{
     display: flex;
-    padding: 10% 3% 7%;
+    /* padding: 10% 3% 7%; */
     margin: 0px 300px;
     width: 100%;
     justify-content:center;
@@ -532,7 +323,7 @@ section#about_us h3{
     font-size: 3em;
     color:#ffc400;
     text-shadow: 1px -1px 1px white;
-    margin-bottom: 3%;
+    margin: 5% 0 0 3%;
     padding: 3%;
 }
 
@@ -566,7 +357,7 @@ section#about_us p{
 
 .title_section_product:not(:first-child){
     margin-bottom: 2%;
-    margin-top: 7%;
+    margin-top: 12%;
 }
 
 .title_section_product h3{
@@ -615,7 +406,7 @@ strong{
     font-size: 3em;
     color: #ffc400;
     text-shadow: 1px -1px 1px white;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 0;
 }
 
@@ -632,8 +423,9 @@ strong{
 
 div.child_container_product{
     display: flex;
-    justify-content:flex-end;
-
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
 div.child_container_product div{
@@ -653,17 +445,26 @@ div.child_container_product h4{
 }
 
 div.child_container_product img{
-    width:50%;
+    width:30%;
+    height:auto;
 }
 
-#classicDiv div{
-    padding: 0px;
+
+.classicDiv div{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
 }
 
-#classicImg{
-    width:100%;
+.classicDiv .classicImg{
+    width:80%;
     height: 70vh;
 }
+
+/* .classicDiv div a{
+    display: inline;
+} */
 
 .child_container_product_classic h4{
     padding-top: 1%;
@@ -680,11 +481,11 @@ div.child_container_product img{
 }
 
 .child_container_product a{
-    text-indent: 5%;
+    /* text-indent: 5%; */
     font-weight: bold;
     text-decoration: none;
     color: white;
-    font-size: 1.3em;
+    font-size: 2em;
     font-style: italic;
     text-shadow: 1px 1px #ffc400;
     margin:  5% 0;
@@ -695,6 +496,65 @@ div.child_container_product img{
 }
 
 
+/* Media Query */
+
+@media only screen and (max-width: 1025px){
+    
+    div.child_container_product{
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .classicImg{
+        order: 2;
+        height: 10% !important;
+        width: 80%;
+    }
+}
+/* ----------------End Media Query--------------------------- */
+
+
+/* ****************************************************************
+                        CONTACT PAGE
+*******************************************************************/
+/* Form */
+
+.form-section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 3% 0;
+}
+
+form label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 1.5em;
+    color: #ffc400;
+}
+
+form #submit{
+    background-color: #ffc400;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 1100px){
+    .form-row div {
+        width: 100% !important;
+        /* display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column; */
+    }
+}
 
 /* ****************************************************************
                         THANK YOU PAGE

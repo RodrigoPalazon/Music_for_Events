@@ -3,32 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Music for Events</title>
-   
-     <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
   </head>
 <body>
     <header>
-        <a href="index.html">
+        <!-- <a href="index.html">
             <img id="logo" src="assets/images/LOGO_NoBackground.png">
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a  class="active" href="prices.html">Prices</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-
-                <li>
-                    <a  href="index.html">Home</a>
-                </li>
-            </ul>
-        </nav>
-     </header>
+        </a> -->
+<!-- ************************* -->
+        <!-- BOOTSTRAP -->
+<a class="navbar-brand" href="#"><img id="logo" src="assets/images/LOGO_NoBackground.png"></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" >
+        <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link " href="about.html">About</a>
+        <a class="nav-link active" href="prices.html">Prices</a>
+        <a class="nav-link " href="contact.html" >Contact</a>
+      </div>
+    </div>
+  </nav>
+ </header>
     <section id="back-photo">
         <div id="cover-text">
             <h2>PRICES & PRODUCTS</h2>
@@ -118,10 +117,10 @@
                         soloist, duo, trio, or quartet. They can perform different musical genres from classical to pop.
                     </p>
                 </div>
-                <div id="classicDiv" class="child_container_product   child_container_product_classic" >
+                <div  class="classicDiv child_container_product   child_container_product_classic" >
                     <div>
                         <h4>Quartet with a Twist</h4>
-                        <img id="classicImg" src="assets/images/classic_quartet.jpg" alt="sax_player">
+                        <img class="classicImg" src="assets/images/classic_quartet.jpg" alt="Strings classic quartet">
                         <p>
                             Quartet With A Twist (QWAT) is a string quartet based in Amsterdam, 
                             The Netherlands, comprised of conservatory students from around the country.
@@ -158,15 +157,55 @@
                         <!-- <a href="">NEEDING THE LINK HERE</a> -->
                         <p>
                             <br>
+                            <span id="dj_anchor"></span>
                            <strong> Price </strong> starts at (v.a.) <strong> €650 </strong>
                         </p>
                     </div>
-                    
                 </div>
+
+<!-- Product 2 Classic -->
+
+            <div class="classicDiv child_container_product   child_container_product_classic">
+                <div>
+                    <h4>Eudora Quartet</h4>
+                    <img class="classicImg" src="assets/images/eudora_quartet.jpg"  alt="Strings classic quartet">
+                    <p>
+                        The ensemble Eudora Quartet, based in The Netherlands, is composed by four young string players 
+                        from Turkey and Spain. The strange year 2020 brought them together to fight for gender equality 
+                        in music, and to advance their particular vision about repertoire for string quartet.
+                    </p>
+                    <p>
+                        During the history of music, female composers have been relegated to a secondary position within 
+                        society. Even taking into account their high level of musical education and skill, it was common 
+                        for women to have their compositions credited to other male artists. Very often have women worked 
+                        behind for big names, doing important tasks within the career of a father, a brother or a husband, 
+                        while those male artists were taking all the public merits. These women were always under wraps, 
+                        and in many cases, once they were married, their fabulous musical skills were even more underrated 
+                        or simply discontinued.
+                    </p>
+                    <p>
+                        Eudora Quartet wants to put the work of women where it belongs: in the concert hall. 
+                        The public of our generation needs to listen to these precious pieces of art to begin 
+                        healing the mistakes and injustices of the past.
+                    </p>
+                    <!-- <p>
+                        Çisem Özkurt, violin
+                        Ángela Moya, violin
+                        Kardelen Buruk, viola
+                        Cèlia Torres Ruiz, cello
+                    </p> -->
+                        <a href="https://www.youtube.com/watch?v=D4e0ch8jaFQ" target="_blank">Watch here</a>
+                    <p>
+                        <strong> Price </strong> starts at (v.a.)<strong>€950</strong>
+                    </p>
+                </div>
+                
+            </div>
+
                 
 <!-- *********** DJ SECTION ***********                 -->
 
-                <div class="title_section_product">
+                <div  class="title_section_product">
                     <h3>DJ / DJ + Musician</h3>
                 </div>
 
@@ -202,6 +241,7 @@
                             <!-- <a href="">NEEDING THE LINK HERE</a> -->
                             <p>
                                 <br>
+                                <span id="photoVideo_anchor"></span>
                                <strong> Price </strong> starts at (v.a.) <strong> 950€ </strong>(4 hours DJ + Equipment)
                             </p>
                     </div>
@@ -287,17 +327,27 @@
 
 
    <footer>
-    <ul class="social-networks">
+        <ul class="social-networks">
             <li><a href="https://www.facebook.com/musicforeventsNL" target="_blank"><i class="fab fa-facebook-square" title="Facebook"></i></a></li>
             <li><a href="https://twitter.com/MusicforeventsN" target="_blank"><i class="fab fa-twitter-square" title="Twitter"></i></a></li>
             <li><a href="https://www.youtube.com/channel/UCHrcgxMp3AtVHSwPbXfGu2g" target="_blank"><i class="fab fa-youtube" title="Youtube"></i></a></li>
             <li><a href="https://www.instagram.com/musicforevents.nl/" target="_blank"><i class="fab fa-instagram" title="instagram"></i></a></li>
             <li><a href="contact.html" target="_blank"><i class="far fa-envelope" title="Contact Us"></i></a></li>
         </ul>
-</footer> 
- <script src="https://kit.fontawesome.com/3982258271.js"></script>
-<!-- Script to load the helper code for this project in repl.it. Do not edit -->
-<!--<script src="https://kit.fontawesome.com/3982258271.js"></script>
-<script src="index.js"></script> -->
-</body>
+    </footer> 
+    <script src="https://kit.fontawesome.com/3982258271.js"></script>
+  
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script to load the helper code for this project in repl.it. Do not edit -->
+    <!--<script src="https://kit.fontawesome.com/3982258271.js"></script>
+    <script src="index.js"></script> -->
+  </body>
 </html>
