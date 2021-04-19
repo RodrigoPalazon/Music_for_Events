@@ -178,8 +178,12 @@ main h2{
     margin-right: auto;
     margin-left: auto;
     font-weight: 900;
+    /* text-decoration: none; */
 }
 
+.child a{
+    text-decoration: none;
+}
 
 
 /* *****   HAVING FUN ***** */
@@ -267,6 +271,7 @@ ul.social-networks{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     width: auto;
     padding: 1em;
     margin-bottom: -1rem;
@@ -462,9 +467,6 @@ div.child_container_product img{
     height: 70vh;
 }
 
-/* .classicDiv div a{
-    display: inline;
-} */
 
 .child_container_product_classic h4{
     padding-top: 1%;
@@ -475,13 +477,12 @@ div.child_container_product img{
 }
 
 .child_container_product p{
-    text-indent: 6%;
+    /* text-indent: 6%; */
     font-size: 1.3em;
     letter-spacing: 2px;
 }
 
 .child_container_product a{
-    /* text-indent: 5%; */
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -509,10 +510,15 @@ div.child_container_product img{
         text-align: center;
     }
 
+    div.child_container_product img{
+        margin-bottom: 3%;
+    }
+
     .classicImg{
         order: 2;
         height: 10% !important;
         width: 80%;
+        margin-bottom: 3% !important;
     }
 }
 /* ----------------End Media Query--------------------------- */
