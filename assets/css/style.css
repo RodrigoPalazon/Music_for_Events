@@ -1,4 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
     margin:0;
@@ -100,10 +101,13 @@ a.active{
     display: flex;
     justify-content:center;
     align-items:center;
+    
 }
 
 #back-photo div{
     background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 
@@ -115,6 +119,7 @@ a.active{
     padding:0px;
     color: black;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 } 
 
 /******  CONTAINER & CHILDREN  ******/
@@ -260,6 +265,17 @@ section#having_fun input{
       text-align: center
   }
 
+  @media screen and (min-width: 1160px){
+    #back-photo{
+      position: relative;
+    }
+    
+    #back-photo div{
+        position: absolute;
+        bottom: 90px;
+        right: 10px;
+    }
+  }
 
 /******************   FOOTER *************************/
 
@@ -465,6 +481,7 @@ div.child_container_product img{
 .classicDiv .classicImg{
     width:80%;
     height: 70vh;
+    margin-bottom: 1em;
 }
 
 
@@ -472,8 +489,14 @@ div.child_container_product img{
     padding-top: 1%;
 }
 
+
 .child_container_product_classic p{
-    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.child_container_product_classic p:first-child{
+    padding-top: 2%;
 }
 
 .child_container_product p{
@@ -494,6 +517,19 @@ div.child_container_product img{
 
 .child_container_product p{
     font-style: italic;
+}
+
+
+#photographer_doris_img{
+    max-height: 25em;
+}
+
+#dj_img{
+    max-height: 20em;
+}
+
+#videography_img{
+    max-height: 15em;
 }
 
 
@@ -569,7 +605,6 @@ form #submit{
 #main_thankYou_page{
     width: 100%;
     height: 90vh;
-    /* background-color: white; */
     color: white;
     display: flex;
     justify-content:center;
