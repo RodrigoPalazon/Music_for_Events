@@ -1,4 +1,4 @@
-Debbuged link: https://rodrigopalazon.github.io/Music_for_Events/
+Debbuged link: musicforevents.nl
 
 # Music for Events - Agency.
 
