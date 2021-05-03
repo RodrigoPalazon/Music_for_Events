@@ -1,4 +1,4 @@
-Debbuged link: www.musicforevents.nl
+Debugged link: www.musicforevents.nl
 
 # Music for Events - Agency.
 
