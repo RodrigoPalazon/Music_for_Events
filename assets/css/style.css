@@ -466,8 +466,8 @@ div.child_container_product h4{
 }
 
 div.child_container_product img{
-    width:30%;
-    height:auto;
+    max-width:23em;
+    max-height:28em;
 }
 
 
@@ -479,8 +479,8 @@ div.child_container_product img{
 }
 
 .classicDiv .classicImg{
-    width:80%;
-    height: 70vh;
+    max-width: 40em!important;
+    /* max-height: 28em; */
     margin-bottom: 1em;
 }
 
