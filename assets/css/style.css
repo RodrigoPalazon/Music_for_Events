@@ -125,15 +125,15 @@ a.active{
 /******  CONTAINER & CHILDREN  ******/
 
  main{
-    /* clear: both;
+    clear: both;
     padding-bottom: 8%;
     background-color: black;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: auto; */
+    max-width: 98%;
+    height: auto;
 }
 
 
@@ -382,14 +382,17 @@ section#about_us p{
 
 .article_artist_price{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+    min-width: 98%;
     height: auto;
 }
 
 .mini_container_artist{
-    width: 15%;
+    margin: .5%;
+    width: 20em;
+    min-width: 19.99%;
+    /* min-width: 15%; */
     height: 300px;
     background-color: red;
     overflow:hidden;
@@ -397,6 +400,7 @@ section#about_us p{
 
 .mini_container_artist img{
     width: 100%;
+    object-fit:contain;
 }
 
 
