@@ -422,7 +422,20 @@ section#about_us p{
 
 .card .modal-content{
     color: black;
+    margin-top: 15%;
 }
+
+.modal-body{
+    display: flex;
+    justify-content: space-around;
+}
+.modal-body img{
+    width: 30%;
+}
+
+/* .modal-body p{
+    float: right;
+} */
 
 .title_section_product:not(:first-child){
     margin-bottom: 2%;
