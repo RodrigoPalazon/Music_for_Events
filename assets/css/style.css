@@ -1,11 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-*{
+*, html, body{
     margin:0;
     padding:0;
     border:0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body{
@@ -122,19 +123,10 @@ a.active{
 } 
 
 /******  CONTAINER & CHILDREN  ******/
-
- main{
-    clear: both;
-    padding-bottom: 8%;
-    background-color: black;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 98%;
-    height: auto;
+.container-fluid{
+    padding: 0;
+    margin: 0;
 }
-
 
 main h2{
     color:#ffc400;
@@ -149,11 +141,10 @@ main h2{
 .container{
     background-color: black;
     width: 100%;
-    /* height: 150vh; */
     display: flex;
     justify-content:center;
     align-items: center;
-  }
+}
 
   .child{
     width: 34%;
@@ -363,61 +354,68 @@ section#about_us p{
 
 .title_section_product{
     background-color: #ffc400;
-    border: none;
-    width: 101vw;
+    width: 100%;
     text-align: center;
 }
 
-.container_product article{
+.container_product{
+    display: flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    flex-direction: column;
+}
+
+.description_section_product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.product_section{
     display: flex;
     justify-content:space-around;
-    /* align-items:center; */
-    flex-direction: column;
     flex-wrap: wrap;
+    min-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-
-.article_artist_price{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    min-width: 98%;
-    height: auto;
-} 
 
 .card{
-    width: 25%;
-    color: rgb(253, 203, 3);
-}
-
-.card:hover {
-    background-color: rgb(253, 203, 3);
-    /* color: rgb(253, 203, 3); */
-    cursor: pointer;
-}
-
-.card:hover .card-body{
-    height: 100px;
-    /* bottom: 240px; */
-    background: rgba(37, 37, 37, 0.803);
-    visibility:visible;
-    transition-timing-function: ease-in;
+    width: 200px;
+    height: 200px;
+    border: none;
 }
 
 .card img{
     width: 100%;
-    height: 300px;
+    height: 200px;
+    overflow:unset;
     filter:grayscale(100%);
 }
 
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .card-body{
+    height: 200px;
+    background: rgba(37, 37, 37, 0.800);
+    visibility:visible;
+    color:rgb(240, 209, 10);
+}
+
 .card-body{
+    padding-top: 130px;
     visibility: hidden;
     position: absolute;
-    bottom: 0px;
     width: 100%;
     background-color: rgba(35, 34, 34, 0.8);
-    /* display: flex;
-    justify-content: flex-end;
-    flex-direction: column; */
+    /* transition: all 0.4s ease-in-out; */
+}
+
+.card-body .card-title{
+    font-weight: bold;
 }
 
 .card .modal-content{
@@ -437,10 +435,10 @@ section#about_us p{
     float: right;
 } */
 
-.title_section_product:not(:first-child){
+/* .title_section_product:not(:first-child){
     margin-bottom: 2%;
     margin-top: 12%;
-}
+} */
 
 .title_section_product h3{
     font-size: 3.5em;
@@ -468,13 +466,13 @@ strong{
     font-size: 1.2em;
 }
 
-.container_product article #text_live_bands{
+/* #text_live_bands{
     width: 90%;
-    font-size: 1.5em;
+    font-size: 1.35rem;
     text-align: center;
     line-height: 32px;
-    padding-top: 7%;
-}
+    padding-top: 5px;
+} */
 
 
 .container_product article .subTitle_section_product{
