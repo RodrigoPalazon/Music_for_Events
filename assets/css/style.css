@@ -386,20 +386,21 @@ section#about_us p{
 
 .card{
     width: 25%;
+    color: rgb(253, 203, 3);
 }
 
 .card:hover {
     background-color: rgb(253, 203, 3);
-    color: rgb(253, 203, 3);
+    /* color: rgb(253, 203, 3); */
     cursor: pointer;
 }
 
 .card:hover .card-body{
-    height: 120px;
+    height: 100px;
     /* bottom: 240px; */
-    background: black;
-    display: block;
-    /* transition-timing-function: ease-in; */
+    background: rgba(37, 37, 37, 0.803);
+    visibility:visible;
+    transition-timing-function: ease-in;
 }
 
 .card img{
@@ -409,7 +410,7 @@ section#about_us p{
 }
 
 .card-body{
-    display: none;
+    visibility: hidden;
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -419,19 +420,9 @@ section#about_us p{
     flex-direction: column; */
 }
 
-/* .card-body p{
-    display: none;
-} */
-
-/* .intro{
-    height: 200px;
-    width: 350px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
-    background-color: (27,27,27,.5);
-    color:white;
-} */
+.card .modal-content{
+    color: black;
+}
 
 .title_section_product:not(:first-child){
     margin-bottom: 2%;

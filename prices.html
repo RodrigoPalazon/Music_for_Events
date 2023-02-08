@@ -60,13 +60,36 @@
 <!-- ********* JAZZ SECTION *************** -->
         <section class="product_section">
             <div class="article_artist_price">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;" data-toggle="modal" data-target="#myModal">
                     <img src="assets/images/miguel_sax.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Miguel Sucasas</h5>
                       <p class="card-text">from: $$$</p>
                       <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
+                    </div> 
+
+                    <!-- Trigger the modal with a button -->
+                            <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Miguel Sucasas</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                            <div class="modal-body">
+                                                <p>Some text in the modal.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
                 </div>
 
                 <div class="card" style="width: 18rem;">
@@ -178,6 +201,8 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
 
     <!-- Script to load the helper code for this project in repl.it. Do not edit -->
     <!--<script src="https://kit.fontawesome.com/3982258271.js"></script>
