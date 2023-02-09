@@ -411,7 +411,7 @@ section#about_us p{
     position: absolute;
     width: 100%;
     background-color: rgba(35, 34, 34, 0.8);
-    /* transition: all 0.4s ease-in-out; */
+    /* transition-timing-function: ease-out; */
 }
 
 .card-body .card-title{
@@ -465,15 +465,6 @@ section#about_us p{
 strong{
     font-size: 1.2em;
 }
-
-/* #text_live_bands{
-    width: 90%;
-    font-size: 1.35rem;
-    text-align: center;
-    line-height: 32px;
-    padding-top: 5px;
-} */
-
 
 .container_product article .subTitle_section_product{
     display: flex;
