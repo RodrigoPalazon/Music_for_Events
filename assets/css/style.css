@@ -373,6 +373,8 @@ section#about_us p{
     width: 200px;
     height: 200px;
     border: none;
+    margin-bottom: 30px;
+    box-shadow: -5px -5px 15px #76757588;
 }
 
 .card img{
