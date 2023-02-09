@@ -299,28 +299,22 @@ ul.social-networks{
     list-style-type: none;
 }
 
-
-
-
-
 /* #################################################### 
                 ABOUT PAGE 
 ####################################################*/
 
 section#about_us{
     display: flex;
-    /* padding: 10% 3% 7%; */
-    margin: 0px 300px;
-    width: 100%;
+    flex-direction: column;
     justify-content:center;
-    flex-wrap: wrap;
+    align-items: center;
+    width: 98%;
 }
 
 section#about_us img{
-    width: 60%;
-    height: auto; 
-    margin-right: 3%;
+    width: 50%;
     border: 3px outset #b18700;
+    border-radius: 10%;
     min-width: 400px;
 }
 
@@ -334,17 +328,11 @@ section#about_us h3{
     font-size: 3em;
     color:#ffc400;
     text-shadow: 1px -1px 1px white;
-    margin: 5% 0 0 3%;
     padding: 3%;
 }
 
 section#about_us p{
     font-size: 1.5em;
-    text-align: center;
-    margin-right: 5%;
-    text-align:justify;
-    line-height: 32px;
-    text-indent: 5%;
 }
 
 
