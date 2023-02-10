@@ -105,25 +105,9 @@ main h2{
     padding: 0 2% 2%;
 }
 
-   .child input{
-    background-color: #b18700;
-    border-radius: 30%;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 1em;
-    cursor: pointer;
-    margin-bottom: 15%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 900;
-    /* text-decoration: none; */
-}
-
-.child a{
+/* .child a{
     text-decoration: none;
-}
+} */
 
 
 /* *****   HAVING FUN ***** */
@@ -159,10 +143,6 @@ section#having_fun h3{
 section#having_fun p{
     font-size: 1.2em;
     text-align: center;
-}
-
-section#having_fun input{
-    margin-top: 3em;
 }
 
 
