@@ -267,38 +267,6 @@ section#having_fun input{
     }
   }
 
-/******************   FOOTER *************************/
-
-footer{
-    background-color: rgb(24 24 24);;
-}
-
-ul.social-networks{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: auto;
-    padding: 1em;
-    margin-bottom: -1rem;
-}
-
-
-.social-networks i{
-    font-size: 200%;
-    padding: 1% 5%;
-    color: white;
-    list-style-type: none;
-}
-
-.social-networks i:hover{
-    color: #ffc400;
-}
-
-.social-networks li{
-    list-style-type: none;
-}
-
 /* #################################################### 
                 ABOUT PAGE 
 ####################################################*/
