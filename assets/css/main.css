@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, html, body{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+#logo{
+    height: 40px;
+}
+
+h2{
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+} 
+
+.nav-link{
+    font-size: 1em;
+    color:white !important;
+}
+
+.bg-dark{
+    background-color: black !important;
+}
+
+#back-photo{
+    width: 100%;
+    height:100vh;
+    background: url("/assets/images/big_band.jpg") no-repeat center center; 
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#back-photo div{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#back-photo h2{
+    font-size: 5em;
+    font-family: Oswald;
+    width: 100%;
+    height: auto;
+    /* padding:0px; */
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+} 
