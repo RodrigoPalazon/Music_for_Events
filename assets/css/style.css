@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *, html, body{
@@ -15,72 +14,18 @@ body{
     background-color: black;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center !important;
-    align-content: center !important;
-    background-color: black;
-    color: white;
-    /* height: auto; */
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    border-bottom: 2px solid rgb(24 24 24);
+#logo{
+    height: 40px;
 }
-
-header img#logo{
-    height: 5em;
-    border-radius: 25px;
-    margin-left: 30px;
-}
-
-header a{
-    display:inline;
-    width:16%;
-}
-
-
-header nav ul a{
-    width:100%;
-}
-            /* headings and logo */
 
 h2{
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    /* color: white; 
-    padding: 3%; */
 } 
 
-            /* navigation links */
-
-#menu li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-}
-
-#menu a {
-    text-decoration: none;
-    color: inherit;
-    padding-left: 5%;
-}
-
-#menu a:hover{
-    border-bottom: 1px solid #3a3a3a;
-}
-
-a.active{
-    /* border-bottom: 3px solid #ffc400; */
-    /* margin-left: 18%; */
-    color:#ffc400 !important;
-} 
-
-/* ------------------------ --- */
 .nav-link{
-    margin-right: 10%;
+    /* margin-right: 10%; */
     font-size: 1.5em;
     color:white !important;
 }
@@ -88,7 +33,7 @@ a.active{
 
 .bg-dark{
     background-color: black !important;
-    margin: 0 2% 0 0;
+    /* margin: 0 2% 0 0; */
 }
 
 
@@ -223,22 +168,13 @@ section#having_fun input{
 
   @media screen and (max-width: 1025px){
     .container{
-        background-color: black;
-        height: auto;
         display: flex;
-        justify-content:center;
-        align-items: center;
-        flex-direction: column;
         flex-wrap: wrap;
-        padding-top: 3%;
+        padding-top: 15px;
     }
     .child{
         width: 90%;
       }
-    
-    .child input{
-        margin-bottom: 7%;
-    }
 
     section#having_fun iframe{
         height:50vh;
