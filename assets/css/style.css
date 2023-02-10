@@ -367,6 +367,7 @@ section#about_us p{
     min-width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
+    /* background-color: pink; */
 }
 
 .card{
@@ -396,7 +397,7 @@ section#about_us p{
 }
 
 .card-body{
-    padding-top: 130px;
+    padding-top: 110px;
     visibility: hidden;
     position: absolute;
     width: 100%;
@@ -410,7 +411,7 @@ section#about_us p{
 
 .card .modal-content{
     color: black;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .modal-body{
