@@ -1,6 +1,6 @@
 .title_section_product{
     background-color: #ffc400;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
 }
 
@@ -60,7 +60,6 @@
     position: absolute;
     width: 100%;
     background-color: rgba(35, 34, 34, 0.8);
-    /* transition-timing-function: ease-out; */
 }
 
 .card-body .card-title{

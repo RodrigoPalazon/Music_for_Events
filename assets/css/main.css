@@ -8,6 +8,10 @@
     max-width: 100%;
 }
 
+.container-fluid{
+    padding: 0;
+}
+
 body{
     font-family: Lato, sans-serif;
     color: white;
@@ -25,15 +29,13 @@ h2{
 } 
 
 .nav-link{
-    /* margin-right: 10%; */
-    font-size: 1.5em;
+    font-size: 1em;
     color:white !important;
 }
 
 
 .bg-dark{
     background-color: black !important;
-    /* margin: 0 2% 0 0; */
 }
 
 
@@ -51,137 +53,21 @@ h2{
 
 #back-photo div{
     background-color: rgba(255, 255, 255, 0.8);
-    padding-left: 1em;
-    padding-right: 1em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
 }
-
 
 #back-photo h2{
     font-size: 5em;
     font-family: Oswald;
     width: 100%;
     height: auto;
-    padding:0px;
+    /* padding:0px; */
     color: black;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 } 
 
-/******  CONTAINER & CHILDREN  ******/
-.container-fluid{
-    padding: 0;
-    margin: 0;
-}
-
-main h2{
-    color:#ffc400;
-    text-shadow: 1px -1px 1px white;
-    margin-bottom: 3%;
-    padding: 8% 3% 3%;
-    text-align: center;
-    font-size: 3em;
-}
-
-
-.container{
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-  .child{
-    width: 34%;
-    padding: 1%;
-  }
-
-  .child h3{
-      padding: 2%;
-      font-size: 2em;
-  }
-
-  .child p{
-    padding: 0 2% 2%;
-}
-
-/* .child a{
-    text-decoration: none;
-} */
-
-
-/* *****   HAVING FUN ***** */
-
-section#having_fun .container{
-    flex-direction: column-reverse;
-    text-align: center;
-    width: 100%;
-}
-
-section#having_fun .container div{
-    order: 2;
-}
-
-section#having_fun iframe{
-    width: 100%;
-    height: 80vh; 
-    margin-right: 3%;
-    border: 3px outset #b18700;
-}
-
-section#having_fun div{
-    width: 80%;
-}
-
-section#having_fun h3{
-    font-size: 3em;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-}
-
-section#having_fun p{
-    font-size: 1.2em;
-    text-align: center;
-}
-
-
-  @media screen and (max-width: 1025px){
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 15px;
-    }
-    .child{
-        width: 90%;
-      }
-
-    section#having_fun iframe{
-        height:50vh;
-    }
-  }
-
-  .child img{
-      width: 100%;
-      height: auto;
-      min-height: 70%;
-  }
-
-  .child h3, .child p{
-      text-align: center
-  }
-
-  @media screen and (min-width: 1160px){
-    #back-photo{
-      position: relative;
-    }
-    
-    #back-photo div{
-        position: absolute;
-        bottom: 90px;
-        right: 10px;
-    }
-  }
 /* ****************************************************************
                         CONTACT PAGE
 *******************************************************************/
