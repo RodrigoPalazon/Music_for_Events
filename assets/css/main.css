@@ -33,14 +33,11 @@ h2{
     color:white !important;
 }
 
-
 .bg-dark{
     background-color: black !important;
 }
 
-
 /* PRESENTATION BELOW THE NAV MENU*/
-
 #back-photo{
     width: 100%;
     height:100vh;
@@ -48,13 +45,10 @@ h2{
     display: flex;
     justify-content:center;
     align-items:center;
-    
 }
 
 #back-photo div{
     background-color: rgba(255, 255, 255, 0.8);
-    /* padding-left: 1em;
-    padding-right: 1em; */
 }
 
 #back-photo h2{
@@ -68,9 +62,7 @@ h2{
     font-family: 'Montserrat', sans-serif;
 } 
 
-/* ****************************************************************
-                        CONTACT PAGE
-*******************************************************************/
+/* Contact page  */
 .form-section {
     display: flex;
     justify-content:center;
@@ -96,28 +88,4 @@ form #submit{
     .form-row div {
         width: 100% !important;
     }
-}
-
-/* ****************************************************************
-                        THANK YOU PAGE
-*******************************************************************/
-
-#main_thankYou_page{
-    width: 100%;
-    height: 90vh;
-    color: white;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    font-size: 1.5em;
-    padding-top: 15%;
-}
-
-#main_thankYou_page a{
-    width: 50%;
-}
-
-#main_thankYou_page img{
-    width: 100%;
-    height:auto
 }

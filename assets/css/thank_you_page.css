@@ -1,0 +1,12 @@
+#main_thankYou_page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#main_thankYou_page a{
+    width: 40%;
+}
