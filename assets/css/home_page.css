@@ -1,11 +1,17 @@
 @import url("main.css");
 
-main h2{
+h2{
     color:#ffc400;
     text-shadow: 2px -2px 2px white;
     margin: 1.2em 0 .5em 0;
     text-align: center;
     font-size: 3em;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .container{
@@ -14,21 +20,9 @@ main h2{
     align-items: center;
 }
 
-.our_services_child{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    padding: 1%;
-}
-
-.our_services_child h3{
-    padding: 2%;
-    font-size: 2em;
-}
-
-.our_services_child p{
-padding: 0 2% 2%;
+a, a:hover{
+    text-decoration: none;
+    color: white;
 }
 
 section#having_fun .container{
