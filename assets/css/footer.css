@@ -1,7 +1,3 @@
-footer{
-    background-color: rgb(24 24 24);;
-}
-
 ul.social-networks{
     display:flex;
     justify-content: space-around;
@@ -12,12 +8,9 @@ ul.social-networks{
     margin-bottom: -1rem;
 }
 
-
 .social-networks i{
     font-size: 200%;
-    padding: 1% 5%;
     color: white;
-    list-style-type: none;
 }
 
 .social-networks i:hover{

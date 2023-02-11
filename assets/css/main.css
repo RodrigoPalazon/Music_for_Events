@@ -29,12 +29,12 @@ h2{
 } 
 
 .nav-link{
-    font-size: 1em;
-    color:white !important;
+    font-size: 1.1em;
+    color:rgb(193, 193, 193) !important;
 }
 
 .bg-dark{
-    background-color: black !important;
+    background-color: rgb(23, 23, 23) !important;
 }
 
 #back-photo{
@@ -55,7 +55,6 @@ h2{
     font-family: Oswald;
     width: 100%;
     height: auto;
-    /* padding:0px; */
     color: black;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
