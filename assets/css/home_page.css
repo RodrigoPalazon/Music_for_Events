@@ -1,3 +1,5 @@
+@import url("main.css");
+
 main h2{
     color:#ffc400;
     text-shadow: 2px -2px 2px white;
@@ -8,8 +10,8 @@ main h2{
 }
 
 .container{
-    background-color: black;
-    width: 100%;
+    /* background-color: black; */
+    /* width: 100%; */
     display: flex;
     justify-content:center;
     align-items: center;

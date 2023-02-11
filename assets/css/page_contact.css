@@ -1,4 +1,5 @@
-/* Contact page  */
+@import url("main.css");
+
 .form-section {
     display: flex;
     justify-content:center;

@@ -1,3 +1,5 @@
+@import url("main.css");
+
 section#about_us{
     display: flex;
     flex-direction: column;
