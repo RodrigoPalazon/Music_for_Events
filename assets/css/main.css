@@ -17,6 +17,7 @@ body {
     height: 100%;
     text-align: center;
     background-color: rgb(32, 32, 32);
+    color: rgb(230, 230, 230);
 }
 
 .container-fluid{
