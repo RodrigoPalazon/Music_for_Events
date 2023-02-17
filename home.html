@@ -9,7 +9,7 @@
         <link href="./assets/css/footer.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="home.html">
             <img id="logo" src="assets/images/LOGO_NoBackground.png">
             </a>
@@ -36,60 +36,79 @@
         </nav>
         <section id="back-photo">
             <div>
-                <h2>Music is Our Language</h2>
+                <div class="head" id="home">
+                    <div class="head_opacity">
+                        <div class="row">
+                        <div class="col-md-12">
+                        <div class="title">
+                            <h1 class="display-1">Music</h1>
+                            <hr class="hr-title">
+                            <h3 class="display-5">is our language</h3>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
             </div>
         </section>
-        <main>
-            <section>
-                <h2>Our Services</h2>
-                <div class="container">
-                    <div class="child">
-                        <img class="img-thumbnail" src="assets/images/sax_player.jpg" alt="Saxphone Player">
-                        <h3>LIVE BAND</h3>
-                        <p>
-                            Create the best atmosphere for your event with our jazz bands, classical bands and party bands.
-                        </p>
-                        <button href="prices.html" type="button" class="btn btn-warning">INFO</button>
+        <h2>Our Services</h2>
+        <main class="main">         
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
+                <a class="mb-5" href="prices.html">
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/sax_player.jpg" alt="Saxphone Player">
+                            <div class="card-body bg-dark">
+                            <h5 class="card-title">LIVE BAND</h5>
+                            <p class="card-text">Create the best atmosphere for your event with our jazz bands, classical bands and party bands.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="child">
-                        <img src="assets/images/dj_hand_colorful.jpg" alt="DJ Playing">
-                        <h3>DJ / DJ + MUSICIAN</h3>
-                        <p>
-                            Bring your party to the next level with our DJs. Combine a musician with the DJ for the ultimate experience.
-                        </p>
-                        
-                        <button href="prices.html#dj_anchor" type="button" class="btn btn-warning">INFO</button>
+                </a>
+                <a class="mb-5" href="prices.html">
+                    <div class="col">
+                        <div class="card">
+                        <img class="card-img-top" src="assets/images/dj_hand_colorful.jpg" alt="DJ Playing">
+                        <!-- <img src="..." class="card-img-top" alt="..."> -->
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title">DJ / DJ + MUSICIAN</h5>
+                            <p class="card-text">Bring your party to the next level with our DJs. Combine a musician with the DJ for the ultimate experience.</p>
+                        </div>
+                        </div>
                     </div>
-                    <div class="child" id="last_child">
-                        <img src="assets/images/photo_main.jpg" alt="Photographer">
-                        <h3>PHOTO & VIDEO</h3>
-                        <p>
-                            Hire a photographer or videographer to capture the best memories for your special day.
-                        </p>
-                    <button href="prices.html#photoVideo_anchor" type="button" class="btn btn-warning">INFO</button>
+                </a>
+                <a class="mb-5" href="prices.html#anchor_link_to_photo_prices">
+                    <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/images/photo_main.jpg" alt="Photographer">
+                        <div class="card-body bg-dark">
+                        <h5 class="card-title">PHOTO & VIDEO</h5>
+                        <p class="card-text">Hire a photographer or videographer to capture the best memories for your special day.</p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                    </div>
+                </a>    
+              </div>
 
-            <section id="having_fun">
-                <div class="container">
-                    <iframe class="child" src="https://www.youtube.com/embed/gjk76oM-WVU" >
+            <div class="having_fun row d-flex p-5 flex-wrap justify-content-around container-fluid text-center bg-warning">
+                  <div id="having_fun_text" class="text-center mr-5">
+                    <h3 class="display-4 pt-5">Having Fun</h3>
+                        <p class="lead pt-5">
+                            Enjoy the work of out experienced and passionate artists. 
+                        </p>
+                        <p class="lead">
+                            Together our team of talented professionals are ready to make your event the best.
+                        </p>
+                  </div>
+                  <div >
+                    <iframe  src="https://www.youtube.com/embed/gjk76oM-WVU" >
                     </iframe>
-
-                    <div>
-                        <h3>Having Fun</h3>
-                        <p>
-                            Enjoy the work of out experienced and passionate artists. Together our team of talented
-                            professionals are ready to make your event the best.
-                        </p>
-
-                    </div>
-                </div>
-            </section>
+                  </div>
+            </div>
         </main>
         
         <div w3-include-html="./components/footer.html"></div>     
-        
+    
         <script src="https://kit.fontawesome.com/3982258271.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
