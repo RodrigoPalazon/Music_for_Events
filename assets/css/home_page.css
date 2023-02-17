@@ -25,21 +25,17 @@ a, a:hover{
     color: white;
 }
 
-
-.having_fun p, .having_fun h3{
+.having_fun p, .having_fun h3 {
     color:black;
 }
 
-.having_fun {
-    padding: 50px 50px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#having_fun_text{
+   max-width: 550px;
 }
 
 iframe {
-    width: 50vw;
-    height: 400px;
+    width: 700px;
+    height: 450px;
     border-radius: 4%;
-    filter: drop-shadow(7px 7px 5px rgba(255, 217, 0, 0.403));
+    filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
 }
