@@ -1,11 +1,14 @@
 @import url("main.css");
 
-section#about_us{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    width: 98%;
+h2{
+    color:#ffc400;
+    text-shadow: 0px 4px 3px rgb(46, 46, 46),
+                 0px 8px 13px rgba(0,0,0,1),
+                 0px 18px 23px rgba(0,0,0,.5);
+    margin: 1.2em 0 .5em 0;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Cutive Mono', monospace;
 }
 
 section#about_us img{
@@ -13,12 +16,12 @@ section#about_us img{
     border: 3px outset #b18700;
     border-radius: 10%;
     min-width: 400px;
+    margin-bottom: 3em;
 }
 
 section#about_us div{
-    text-align: center;
     width: 80%;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
 }
 
 section#about_us h3{
