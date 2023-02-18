@@ -1,26 +1,11 @@
-/* ul.social-networks{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: auto;
-    padding: 1em;
-    margin-bottom: -1rem;
+.customers_logo{
+    border-radius: 5px;
+    background-color: rgb(255, 249, 179);
 }
 
-.social-networks i{
-    font-size: 200%;
-    color: white;
+.customers_logo img{
+    width: 100px;
 }
-
-.social-networks i:hover{
-    color: #ffc400;
-}
-
-.social-networks li{
-    list-style-type: none;
-} */
-
 
 
 
