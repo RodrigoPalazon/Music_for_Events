@@ -17,16 +17,26 @@ main {
     flex-wrap: wrap;
 }
 
-.container{
+/* .container{
     display: flex;
     justify-content:center;
     align-items: center;
+} */
+
+h5{
+    font-family: 'Cutive Mono', monospace;
+    text-shadow: 0px 4px 3px rgba(0,0,0,1),
+                 0px 8px 13px rgba(0,0,0,1),
+                 0px 18px 23px rgba(0,0,0,.5);
+    /* color: white; */
 }
 
 a, a:hover{
     text-decoration: none;
     color: white;
 }
+
+a:hover{}
 
 .having_fun p, .having_fun h3 {
     color:black;

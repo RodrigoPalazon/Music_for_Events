@@ -25,7 +25,7 @@ body {
 }
 
 #logo{
-    height: 40px;
+    height: 64px;
 }
 
 h2{
@@ -35,7 +35,7 @@ h2{
 } 
 
 .nav-link{
-    font-size: 1.1em;
+    font-size: 1.2em;
     color:rgb(193, 193, 193) !important;
 }
 
