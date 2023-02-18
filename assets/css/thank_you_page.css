@@ -1,0 +1,16 @@
+@import url("main.css");
+
+#main_thank_you_page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.5em;
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+#main_thank_you_page a{
+    width: 400px;
+}

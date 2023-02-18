@@ -1,0 +1,54 @@
+@import url("main.css");
+
+h2{
+    color:#ffc400;
+    text-shadow: 0px 4px 3px rgb(46, 46, 46),
+                 0px 8px 13px rgba(0,0,0,1),
+                 0px 18px 23px rgba(0,0,0,.5);
+    margin: 1.2em 0 .5em 0;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Cutive Mono', monospace;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* .container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+} */
+
+h5{
+    font-family: 'Cutive Mono', monospace;
+    text-shadow: 0px 4px 3px rgba(0,0,0,1),
+                 0px 8px 13px rgba(0,0,0,1),
+                 0px 18px 23px rgba(0,0,0,.5);
+    /* color: white; */
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{}
+
+.having_fun p, .having_fun h3 {
+    color:black;
+}
+
+#having_fun_text{
+   max-width: 550px;
+}
+
+iframe {
+    width: 700px;
+    height: 450px;
+    border-radius: 4%;
+    filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
+}

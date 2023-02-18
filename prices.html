@@ -5,354 +5,113 @@
     <title>Music for Events</title>
     <link rel="icon" href="assets/images/icon_tab.svg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/prices_page.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/footer.css" rel="stylesheet" type="text/css" />
   </head>
 <body>
-    <header>
-        <!-- <a href="index.html">
-            <img id="logo" src="assets/images/LOGO_NoBackground.png">
-        </a> -->
-<!-- ************************* -->
-        <!-- BOOTSTRAP -->
-<a class="navbar-brand" href="index.html"><img id="logo" src="assets/images/LOGO_NoBackground.png"></a>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav" >
-        <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link " href="about.html">About</a>
-        <a class="nav-link active" href="prices.html">Prices</a>
-        <a class="nav-link " href="contact.html" >Contact</a>
-      </div>
-    </div>
-  </nav>
- </header>
-    <section id="back-photo">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="home.html">
+          <img id="logo" src="assets/images/LOGO_NoBackground.png">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" 
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a class="nav-link" href="home.html">Home</a> 
+                </li>
+
+                <li class="navbar-item">
+                    <a class="nav-link" href="about.html">About</a> 
+                </li>
+
+                <li class="navbar-item">
+                    <a class="nav-link" href="prices.html">Prices</a> 
+                </li>
+
+                <li class="navbar-item">
+                    <a class="nav-link" href="contact.html">Contact</a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <section id="back-photo">
         <div id="cover-text">
             <h2>PRICES & PRODUCTS</h2>
         </div>
-    </section>
+    </section> -->
 
+    <section id="back-photo">
+        <div>
+            <div class="head" id="home">
+                <div class="head_opacity">
+                    <div class="row">
+                    <div class="col-md-12">
+                    <div class="title">
+                        <h1 class="display-1">Prices</h1>
+                        <hr class="hr-title">
+                        <h3 class="display-5">and products</h3>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
       
-    <main>
-        <section id="live_bands" class="container_product">
-            <div class="title_section_product">
+    <main class="container-fluid container_product">
+            <!-- LIVE BANDS -->
+            <div class="container-fluid title_section_product">
                 <h3>LIVE BANDS</h3>
             </div>
-            
-            <article>
-                <div id="text_live_bands">
-                    <p>
-                        Choose the style of music that fits the best to your party or event.
-                    </p>
-                    <p>    
-                        Do you have something specific on mind as a Roaring Twenties event or 
-                        disco ball event? 
-                    </p>
-                    <p>     
-                        Send us a message and we will arrange the perfect 
-                        band for you.
-                    </p>
-                
-                </div>
-<!-- ********* JAZZ SECTION *************** -->
-                <div class="subTitle_section_product">
-                    <h3>JAZZ</h3>
-                    <p>
-                        Ideal for receptions, background music, home parties and business parties. 
-                        Our Jazz bands create the perfect atmosphere for a relaxing event. 
-                        They can as well bring the party up on request with uptempo music.
-                    </p>
-                </div>
-    <!-- Product 1 -->
-                <div class="child_container_product">
-                    <div>
-                        <h4>Miguel Sucasas Jazz Band</h4>
-                        <p>
-                            Miguel Sucasas is a young Spanish musician, graduated from the Royal 
-                            Conservatory of The Hague.
-                        </p>
-                        <p>
-                            He has being touring around Europe with his
-                            music projects and has two music albums with his original music.
-                        </p>
-                        <p>
-                            Together with his jazz band they are the perfect fit for events such 
-                            as receptions, weddings or business parties.
-                        </p>
-                            <a href="https://www.youtube.com/watch?v=eJrAmwpFV94" target="_blank">Watch here</a>
-                        <p>
-                            <strong> Price </strong> starts at  <strong>€450</strong>
-                        </p>
-                    </div>
-                    <img src="assets/images/miguel_sax.png"  alt="sax_player">
-                </div>
-               
-    <!-- Product 2 -->
-                <div class="child_container_product">
-                    <div>
-                        <h4>Felipe Castro Saxophonist</h4>
-                        <p>
-                            Saxophonist Felipe Castro, nominated to Latin Grammys in 2016 and who has been 
-                            involved with countless artists worldwide, brings you SAXOPHONE LIVE MUSIC, 
-                            saxophone solo with high quality backgrounds or with the full band, with a varied 
-                            repertoire from bossa nova, Alicia Keys, Michael Jackson, Maroon 5, Stevie Wonder, 
-                            Earth Wind and Fire, All Green, Donna Summer etc, ideal for weddings, dinners, meetings, 
-                            cocktail, and any event that needs ambient music.
-                        </p>
-                        <!-- <a href="">NEEDING THE LINK HERE</a> -->
-                        <a href="https://youtu.be/0qjBiTqH3kc" target="_blank">Watch here</a>
-                        <p>
-                            <br>
-                            <strong> Price </strong> starts at  <strong> €450 </strong>
-                        </p>
-                    </div>
-                    <img src="assets/images/felipe_sax.jpg" alt="sax_player">
-                </div>
-<!-- *********** CLASSIC SECTION ***********                 -->
-                <div class="subTitle_section_product">
-                    <h3>CLASSIC</h3>
-                    <p>
-                        Ideal for an elegant ambiance, classical background music for events. You can book a 
-                        soloist, duo, trio, or quartet. They can perform different musical genres from classical to pop.
-                    </p>
-                </div>
-                <div  class="classicDiv child_container_product   child_container_product_classic" >
-                    <div>
-                        <h4>Quartet with a Twist</h4>
-                        <img class="classicImg" src="assets/images/classic_quartet.jpg" alt="Strings classic quartet">
-                        <p>
-                            Quartet With A Twist (QWAT) is a string quartet based in Amsterdam, 
-                            The Netherlands, comprised of conservatory students from around the country.
-                        </p>
-                        <p>
-                            Forming in 2020, the quartet saw a gap in the market for specialised live 
-                            event and wedding music and, since it’s success from it’s origination in Perth, 
-                            Western Australia, decided to bring that knowledge across the globe.
-                        </p>
-                        <p>
-                            The ‘Twist’ in QWAT’s name stands for their unique instrumentation – instead of 
-                            the standard two violins,viola and cello, the cello has been replaced with a double bass! 
-                            As a result, QWAT’s sound is unique and sets them apart from other string quartets.
-                        </p>
-                        <p>
-                            With their fun personalities and high calibre of musicianship, Quartet With A Twist has 
-                            got you covered for your next event!
-                        </p>
-                        <!-- <p>
-                            DUTCH
-                            <br>
-                            Quartet With A Twist (QWAT) is een strijkkwartet gevestigd in Amsterdam, bestaande uit studenten van 
-                            verschillende conservatoria in Nederland. Het kwartet in zijn huidige bezetting werd opgericht in 2020
-                            en zag een gat in de markt op het gebied van live-evenementen en bruiloftsmuziek. Vanwege het eerdere
-                            succes in hun thuisbasis Perth, West-Australië, besloot het kwartet een nieuwe doorstart te maken in 
-                            Nederland en daarmee hun kennis over de hele wereld te brengen.
-                            De “Twist” in de naam van QWAT staat voor hun uniek instrumentatie – in plaats van de standaard twee violen, 
-                            altviool en cello, is de cello vervangen door een contrabas! Als gevolg hiervan is het geluid van QWAT uniek 
-                            en onderscheidt het zich van andere strijkkwartetten. 
-                            Met hun vrolijke persoonlijkheden en muzikaal vakmanschap van hoog niveau, bent u met Quartet With A Twist 
-                            in de beste handen.
-                            
-                        </p> -->
-                        <!-- <a href="">NEEDING THE LINK HERE</a> -->
-                        <a href="https://youtu.be/J2hg2yT_FMc" target="_blank">Watch here</a>
-                        <!-- <br> -->
-                        <p>
-                           <strong> Price </strong> starts at  <strong> €650 </strong>
-                        </p>
-                    </div>
-                </div>
-
-<!-- Product 2 Classic -->
-
-            <div class="classicDiv child_container_product   child_container_product_classic">
-                <div>
-                    <h4>Eudora Quartet</h4>
-                    <img class="classicImg" src="assets/images/eudora_quartet.jpg"  alt="Strings classic quartet">
-                    <p>
-                        The ensemble Eudora Quartet, based in The Netherlands, is composed by four young string players 
-                        from Turkey and Spain. The strange year 2020 brought them together to fight for gender equality 
-                        in music, and to advance their particular vision about repertoire for string quartet.
-                    </p>
-                    <p>
-                        During the history of music, female composers have been relegated to a secondary position within 
-                        society. Even taking into account their high level of musical education and skill, it was common 
-                        for women to have their compositions credited to other male artists. Very often have women worked 
-                        behind for big names, doing important tasks within the career of a father, a brother or a husband, 
-                        while those male artists were taking all the public merits. These women were always under wraps, 
-                        and in many cases, once they were married, their fabulous musical skills were even more underrated 
-                        or simply discontinued.
-                    </p>
-                    <p>
-                        Eudora Quartet wants to put the work of women where it belongs: in the concert hall. 
-                        The public of our generation needs to listen to these precious pieces of art to begin 
-                        healing the mistakes and injustices of the past.
-                    </p>
-                    <!-- <p>
-                        Çisem Özkurt, violin
-                        Ángela Moya, violin
-                        Kardelen Buruk, viola
-                        Cèlia Torres Ruiz, cello
-                    </p> -->
-                        <a href="https://www.youtube.com/watch?v=D4e0ch8jaFQ" target="_blank">Watch here</a>
-                    <p>
-                        <strong> Price </strong> starts at <strong>€950</strong>
-                        <span id="dj_anchor"></span>
-                    </p>
-                </div>
-                
+            <div class="description_section_product">
+                <p>
+                    Choose the style of music that fits best for your party or event.
+                </p>
+                <p>    
+                    Do you have something specific in mind such as a Roaring Twenties theme or Disco Ball party?
+                </p>
+                <p>     
+                    Send us a message and we will arrange the perfect band for you.
+                </p>
             </div>
+            <!-- Artists' Cards  -->
+            <div class="product_section" w3-include-html="./components/cards/musical_cards.html"></div>
 
-                
-<!-- *********** DJ SECTION ***********                 -->
-
-                <div  class="title_section_product">
-                    <h3>DJ / DJ + Musician</h3>
-                </div>
-
-
-                <div class="subTitle_section_product">
-                    <!-- <h3>DJ / DJ + Musician</h3> -->
-                    <p>
-                        We collaborate with a wide range of DJs. We offer from jazzy oriented music, to all around party, 
-                        salsa nights or disco dance among other styles.
-                        Did you ever dream about having a saxophonist walking between your guests while the DJ is 
-                        bringing the party up? We have it ready for you.
-                    </p>
-                </div>
-                <div class="child_container_product">
-                    <div>
-                        <h4>Jazz Circus Collective</h4>
-                        <p>
-                            The Jazz Circus is a jazz-oriented total entertainment concept. 
-                        </p>
-                        <p>
-                            It stands for events with a "Jazzy touch". From drinks in the afternoon to 
-                            dancing in the early hours. 
-                        </p>
-                        <p>
-                            The Jazz Circus combines almost all aspects of the nightlife experience. 
-                            Think of DJ-ing, live acts, hostessing, dance performances, variety, decor 
-                            to technical details.                            
-                        </p>
-                        <p>
-                            Our music and acts are characterized by appealing to a wide audience and 
-                            that's how we see everyone dancing to our music.
-                        </p>
-                            <!-- <a href="">NEEDING THE LINK HERE</a> -->
-                            <p>
-                                <br>
-                                <span id="photoVideo_anchor"></span>
-                               <strong> Price </strong> starts at  <strong> 950€ </strong>(4 hours DJ + Equipment)
-                            </p>
-                    </div>
-                    <img id="dj_img" src="assets/images/jazz_circus.jpg" alt="man jumping">
-                </div>
-
-<!-- *********** PHOTO & VIDEO SECTION ***********                 -->
-                
-                <div class="title_section_product">
-                    <h3>PHOTO & VIDEO</h3>
-                </div>
-
-                <div class="subTitle_section_product">
-                    <!-- <h3>PHOTO & VIDEO</h3> -->
-                    <p>
-                        Our team of professional photographers is always at your disposal. 
-                        They have a broad work experience in events such as private parties, 
-                        weddings, music and food festivals. For an optimal experience during 
-                        your event book a photographer with us and let the rest of the work 
-                        in our hands. Check the package prices for the best deals.
-                    </p>
-                </div>
-
-                <div class="child_container_product">
-                    <div>
-                        <h4>Doris van Iperen</h4>
-                        <p>
-                            I am Doris van Iperen, 28 years old and a photographer for almost more 
-                            than 10 years. My interest in photography is very wide, I have taken care 
-                            of photography/videography for film and musical premieres, photographed 
-                            the largest ballet in the world, and contributed to the book “festivalland”, 
-                            a book about festival and nature, I have photographed almost all the festivals 
-                            in the Netherlands. I am also a singer and I sing in 3 bands.
-                            I am very excited to contribute to musicforevents and work in such a nice 
-                            creative and musical team!
-                            
-                            <p>
-                                <br>
-                                <strong> Price </strong> starts at  <strong> 150€ </strong>
-                            </p>
-                        </div>
-                        <img id="photographer_doris_img" src="assets/images/photographer1.png" alt="Blondie Young Lady">
-                </div>
-
-                <div class="child_container_product">
-                    <div>
-                        <h4>Sabine Bastiaans</h4>
-                        <p>
-                            I am Sabine and since the moment I could hold a camera I would run 
-                            around with one. Around the age of 12 I got the old camera from my dad. 
-                            It started with pictures of animals and holidays, later I started 
-                            portraying my own special effect make-up looks. Because of this I started 
-                            doing portrait photography. I like to make dynamic pictures which shows 
-                            the mood and the personality of a person/character. My pictures are vibrant 
-                            and full of color, but I also like to play with black and white.  
-                        </p>
-                        <p>
-                            <br>
-                            <strong>Price</strong> starts at  <strong>150€</strong>
-                        </p>
-                    </div>
-                        <img src="assets/images/photographer2.jpg" alt="Young Lady">
-                </div>
-
-                <div class="child_container_product">
-                    <div>
-                        <!-- <h4>Videography</h4> -->
-                        <h4>Ksenia Ice </h4>
-                        <span>(Videography)</span>
-                        <p>
-                            Hire our experienced videographers for a vivid memory of your day. 
-                            We use the latests technologies to capture your videos with the highest 
-                            resolution. Drone recordings are also possible.
-                        </p>
-                        <p>
-                            <br>
-                            <strong> Price </strong> starts at  <strong>200€</strong>
-                        </p>
-                    </div>
-                    <img id="videography_img" src="assets/images/video_recorder.jpg" alt="Young Lady with a video camera">
-                </div>
-            </article>
-        </section>
+            <!-- PHOTO & VIDEO SECTION -->
+            <div class="container-fluid title_section_product">
+                <h3 id="anchor_link_to_photo_prices">PHOTO & VIDEO</h3>
+            </div>
+            <div class="container-fluid description_section_product">
+                <p>
+                    Our team of professional photographers is always at your disposal.
+                </p>
+                <p>
+                    They have a broad work experience in events such as private parties, 
+                    weddings, music and food festivals. 
+                </p>    
+                    For an optimal experience during your event book a photographer 
+                    with us and let the rest of the work in our hands. 
+                </p>
+                <p>    
+                    Check the package prices for the best deals.
+                </p>
+            </div>
+            <!-- Photographers' Cards  -->
+            <div class="product_section" w3-include-html="./components/cards/photo_cards.html"></div>
     </main>
-
-
-   <footer>
-        <ul class="social-networks">
-            <li><a href="https://www.facebook.com/musicforeventsNL" target="_blank"><i class="fab fa-facebook-square" title="Facebook"></i></a></li>
-            <li><a href="https://twitter.com/MusicforeventsN" target="_blank"><i class="fab fa-twitter-square" title="Twitter"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCHrcgxMp3AtVHSwPbXfGu2g" target="_blank"><i class="fab fa-youtube" title="Youtube"></i></a></li>
-            <li><a href="https://www.instagram.com/musicforevents.nl/" target="_blank"><i class="fab fa-instagram" title="instagram"></i></a></li>
-            <li><a href="contact.html" target="_blank"><i class="far fa-envelope" title="Contact Us"></i></a></li>
-        </ul>
-    </footer> 
+    <!-- Footer  -->
+    <div w3-include-html="./components/footer.html"></div> 
+   
     <script src="https://kit.fontawesome.com/3982258271.js"></script>
-  
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Script to load the helper code for this project in repl.it. Do not edit -->
-    <!--<script src="https://kit.fontawesome.com/3982258271.js"></script>
-    <script src="index.js"></script> -->
+    <script src="index.js"></script> 
   </body>
 </html>

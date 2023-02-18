@@ -1,0 +1,28 @@
+@import url("main.css");
+
+.form-section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 3% 0;
+}
+
+form label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 1.5em;
+    color: #ffc400;
+}
+
+form #submit{
+    background-color: #ffc400;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px){
+    .form-row div {
+        width: 100% !important;
+    }
+}
