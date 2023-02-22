@@ -1,4 +1,5 @@
 @import url("main.css");
+@import url("variables.css");
 
 h2{
     color:#ffc400;
@@ -38,7 +39,12 @@ a, a:hover{
     transform: scale(1.07); 
 }
 
-.having_fun p, .having_fun h3 {
+.having_fun p {
+    font-family: var(--text-font-family);
+    color:black;
+} 
+
+.having_fun h3 {
     color:black;
 }
 
