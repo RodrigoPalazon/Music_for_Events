@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('variables.css');
 
 *, html, body{
     margin:0;
@@ -76,8 +77,8 @@ h2{
                  0px 18px 23px rgba(0,0,0,.5);
   }
   
-.title {
-    font-family: 'Cutive Mono', monospace;
+.title h1 {
+    font-family: var(--head-font-family);
     color: white;
 }
 
@@ -120,9 +121,3 @@ h2{
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-  
-#back-photo h2{
-    font-family: Oswald;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-}
