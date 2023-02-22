@@ -39,6 +39,17 @@ a, a:hover{
     transform: scale(1.07); 
 }
 
+.card-text{
+    display: none; 
+}
+
+a:hover .card-text{
+    display: inline-block;
+    /* opacity: 1; */
+    /* transition-delay: 1s; */
+    /* transition: all 1s ease; */
+}
+
 .having_fun p {
     font-family: var(--text-font-family);
     color:black;
