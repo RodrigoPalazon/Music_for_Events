@@ -30,6 +30,29 @@
     letter-spacing:2px
 }
 
+.spacing_img {
+    width: 120px;
+    height: 120px;
+    background-color: #a9a9a9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.spacing_img img{
+    filter: grayscale(100%);
+    width: 100px;
+    height: 100px;
+}
+
+.horizontal_img img{
+    /* filter: grayscale(100%); */
+    /* width: 100px; */
+    height: 40px;
+}
+
 .site-footer a{
     color:#737373;
 }
