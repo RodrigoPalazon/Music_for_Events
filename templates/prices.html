@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music for Events</title>
+    <link rel="icon" href="assets/images/icon_tab.svg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/prices_page.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/footer.css" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="home.html">
+          <img id="logo" src="../assets/images/LOGO_NoBackground.png">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" 
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a class="nav-link grow_nav_li" href="home.html">Home</a> 
+                </li>
+
+                <li class="navbar-item">
+                    <a class="nav-link grow_nav_li" href="about.html">About</a> 
+                </li>
+
+                <li class="navbar-item">
+                    <a class="nav-link grow_nav_li" href="prices.html">Prices</a> 
+                </li>
+
+                <li class="navbar-item">
+                    <a class="nav-link grow_nav_li" href="contact.html">Contact</a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="back-photo">
+        <div>
+            <div class="head" id="home">
+                <div class="head_opacity">
+                    <div class="row">
+                    <div class="col-md-12">
+                    <div class="title">
+                        <h1 class="fade-in-text display-1">Prices</h1>
+                        <hr class="fade-in-text hr-title">
+                        <h3 class="fade-in-text display-5">and products</h3>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+      
+    <main class="container-fluid  d-flex justify-content-between align-items-center flex-column">
+            <!-- LIVE BANDS -->
+            <div class="container-fluid title_section_product">
+                <h2>LIVE BANDS</h2>
+            </div>
+            <h4>Jazz</h4>
+            <h4>Classical</h4>
+            <h4>Pop</h4>
+            <h4>DJ</h4>
+            <!-- Artists' Cards  -->
+            <div class="product_section" w3-include-html="../components/cards/musical_cards.html"></div>
+
+            <!-- PHOTO & VIDEO SECTION -->
+            <div class="container-fluid title_section_product">
+                <h2 id="anchor_link_to_photo_prices">PHOTO & VIDEO</h2>
+            </div>
+            <!-- Photographers' Cards  -->
+            <div class="product_section" w3-include-html="../components/cards/photo_cards.html"></div>
+    </main>
+    <!-- Footer  -->
+    <div w3-include-html="../components/footer.html"></div> 
+   
+    <script src="https://kit.fontawesome.com/3982258271.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../index.js"></script> 
+  </body>
+</html>

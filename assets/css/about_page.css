@@ -24,13 +24,7 @@ section#about_us div{
     margin-bottom: 3em;
 }
 
-section#about_us h3{
-    font-size: 3em;
-    color:#ffc400;
-    text-shadow: 1px -1px 1px white;
-    padding: 3%;
-}
-
 section#about_us p{
     font-size: 1.5em;
+    text-align: left;
 }

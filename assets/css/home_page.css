@@ -1,4 +1,5 @@
 @import url("main.css");
+@import url("variables.css");
 
 h2{
     color:#ffc400;
@@ -17,18 +18,12 @@ main {
     flex-wrap: wrap;
 }
 
-/* .container{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-} */
 
 h5{
     font-family: 'Cutive Mono', monospace;
     text-shadow: 0px 4px 3px rgba(0,0,0,1),
                  0px 8px 13px rgba(0,0,0,1),
                  0px 18px 23px rgba(0,0,0,.5);
-    /* color: white; */
 }
 
 a, a:hover{
@@ -36,9 +31,31 @@ a, a:hover{
     color: white;
 }
 
-a:hover{}
+.grow { 
+    transition: all .2s ease-in-out; 
+}
 
-.having_fun p, .having_fun h3 {
+.grow:hover { 
+    transform: scale(1.07); 
+}
+
+.card-text{
+    display: none; 
+}
+
+a:hover .card-text{
+    display: inline-block;
+    /* opacity: 1; */
+    /* transition-delay: 1s; */
+    /* transition: all 1s ease; */
+}
+
+.having_fun p {
+    font-family: var(--text-font-family);
+    color:black;
+} 
+
+.having_fun h3 {
     color:black;
 }
 
@@ -51,4 +68,36 @@ iframe {
     height: 450px;
     border-radius: 4%;
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
+}
+
+/* ========================= */
+
+.animate-charcter
+{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+     );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 90px;
+    font-family: 'Cutive Mono', monospace;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
