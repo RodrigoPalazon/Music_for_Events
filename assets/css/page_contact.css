@@ -1,5 +1,9 @@
 @import url("main.css");
 
+.head {
+    background-image: url("/assets/images/general/contact.jpg");
+}
+
 .form-section {
     display: flex;
     justify-content:center;

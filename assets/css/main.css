@@ -54,7 +54,7 @@ h2{
 
 
 .head {
-    background-image: url("/assets/images/big_band.jpg");
+    /* background-image: url("/assets/images/big_band.jpg"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

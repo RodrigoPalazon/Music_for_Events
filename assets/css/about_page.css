@@ -1,5 +1,9 @@
 @import url("main.css");
 
+.head {
+    background-image: url("/assets/images/general/about_us.jpg");
+}
+
 h2{
     color:#ffc400;
     text-shadow: 0px 4px 3px rgb(46, 46, 46),
