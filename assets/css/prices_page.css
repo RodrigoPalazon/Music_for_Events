@@ -1,6 +1,10 @@
 @import url("main.css");
 @import url("variables.css");
 
+.head {
+    background-image: url("/assets/images/general/prices_and_bands.jpg");
+}
+
 .title_section_product{
     text-align: center;
 }
