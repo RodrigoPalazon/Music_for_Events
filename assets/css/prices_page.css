@@ -108,6 +108,7 @@
 
 .modal-body iframe {
     /* width: 500px; */
+    margin: 10px;
     height: 12rem;
     border-radius: 4%;
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
@@ -115,7 +116,7 @@
 
 .modal_text{
     text-align: left;
-    padding: 10px;
+    padding: 25px;
     margin: 10px 0;
     background-color: rgba(135, 135, 135, 0.337);
     border-radius: 10px;
@@ -124,6 +125,11 @@
 
 .book_as_outer_container{
     margin-top: 30px;
+}
+
+.book_as_inner_container h5{
+    margin-left: -80px;
+    font-family: var(--head-font-family);
 }
 
 .book_as_inner_container {
