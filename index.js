@@ -27,3 +27,22 @@ function includeHTML() {
 }
 
 includeHTML();
+
+
+// Set clicked image to fullscreen mode 
+function toggleFullscreenImage(imgElement) {
+    if (!document.fullscreenElement) {
+      // Enter full-screen mode
+      imgElement.requestFullscreen();
+    } else {
+      // Exit full-screen mode
+      document.exitFullscreen();
+    }
+  }
+  
+  // Attach click event listener to the image element
+  var imgElement = document.getElementById('my-img');
+  imgElement.addEventListener('click', function() {
+    toggleFullscreenImage(imgElement);
+  });
+  

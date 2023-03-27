@@ -114,6 +114,18 @@
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
 }
 
+.modal-body img {
+    /* width: 500px; */
+    margin: 10px;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 4%;
+    filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+}
+
 .modal_text{
     text-align: left;
     padding: 25px;
