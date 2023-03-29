@@ -76,6 +76,11 @@
     font-weight: bold;
 }
 
+.card-body .card-text{
+    font-family: var(--head-font-family);
+    /* font-weight: bold; */
+}
+
 /* MODAL */
 /* .modal {
     height: 100%;

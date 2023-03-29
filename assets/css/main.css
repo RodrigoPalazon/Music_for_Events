@@ -36,10 +36,19 @@ h2{
 } 
 
 .nav-link{
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    font-size: 24px;
     color:rgb(193, 193, 193) !important;
 }
 
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav-link{
+        font-size: 80px ;
+        padding: 20px 0 ;
+    }
+}
+  
 .grow_nav_li { 
     transition: all .2s ease-in-out; 
 }
