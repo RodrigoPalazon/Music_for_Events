@@ -42,10 +42,19 @@ h2{
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
     .nav-link{
         font-size: 80px ;
         padding: 20px 0 ;
+    }
+
+    .navbar-toggler{
+        font-size: 50px;
+        padding: 30px;
+    }
+
+    #logo{
+        height: 124px;
     }
 }
   
