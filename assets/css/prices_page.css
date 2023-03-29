@@ -76,6 +76,11 @@
     font-weight: bold;
 }
 
+.card-body .card-text{
+    font-family: var(--head-font-family);
+    /* font-weight: bold; */
+}
+
 /* MODAL */
 /* .modal {
     height: 100%;
@@ -112,6 +117,18 @@
     height: 12rem;
     border-radius: 4%;
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
+}
+
+.modal-body img {
+    /* width: 500px; */
+    margin: 10px;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 4%;
+    filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
 }
 
 .modal_text{
