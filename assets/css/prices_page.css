@@ -77,6 +77,10 @@ main h4{
     font-family: var(--head-font-family);
 }
 
+.modal-backdrop{
+    z-index: 0;
+}
+
 .modal-content{
     color: black;
     /* margin-top: 5%; */
@@ -97,10 +101,19 @@ main h4{
     height: 12rem;
     border-radius: 4%;
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
+
+    background-size: cover;
+    background-position: center;
 }
 
+.modal-body div a{
+    background-color: green;
+    display: inline-block; 
+    z-index: 15; 
+}
+
+
 .modal-body img {
-    /* width: 500px; */
     margin: 10px;
     width: 12rem;
     height: 11rem;
@@ -108,7 +121,6 @@ main h4{
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
     aspect-ratio: 3/2;
     object-fit: contain;
-    /* mix-blend-mode: color-burn; */
 }
 
 .modal_text{
