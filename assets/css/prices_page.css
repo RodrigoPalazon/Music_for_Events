@@ -81,6 +81,19 @@ main h4{
     z-index: 0;
 }
 
+.modal-body div .copyright_issued_link{
+    position: fixed;
+}
+
+.modal-body div a{
+    background-color: green;
+    display: inline-block; 
+    z-index: 100;
+    height: 220px;
+    width: 320px;
+    /* position: fixed; */
+}
+
 .modal-content{
     color: black;
     /* margin-top: 5%; */
@@ -106,11 +119,7 @@ main h4{
     background-position: center;
 }
 
-.modal-body div a{
-    background-color: green;
-    display: inline-block; 
-    z-index: 15; 
-}
+
 
 
 .modal-body img {
