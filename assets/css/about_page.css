@@ -19,7 +19,6 @@ section#about_us img{
     width: 50%;
     border: 3px outset #b18700;
     border-radius: 10%;
-    min-width: 400px;
     margin-bottom: 3em;
 }
 
@@ -32,3 +31,10 @@ section#about_us p{
     font-size: 1.5em;
     text-align: left;
 }
+
+@media only screen and (max-width: 767px) {
+    section#about_us img{
+        width: 90%;
+    }
+}
+  

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Music for Events</title>
     <link rel="icon" href="assets/images/icon_tab.svg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
@@ -42,15 +43,15 @@
         <div>
             <div class="head" id="home">
                 <div class="head_opacity">
-                    <div class="row">
-                    <div class="col-md-12">
-                    <div class="title">
-                        <h1 class="fade-in-text display-1">Prices</h1>
-                        <hr class="fade-in-text hr-title">
-                        <h3 class="fade-in-text display-5">and products</h3>
-                    </div>
-                    </div>
-                    </div>
+                    <!-- <div class="row"> -->
+                        <div class="col-md-12">
+                            <div class="title">
+                                <h1 class="fade-in-text display-1">Prices</h1>
+                                <hr class="fade-in-text hr-title">
+                                <h3 id="anchor_link_jazz_and_classical" class="fade-in-text display-5">and products</h3>
+                            </div>
+                        </div>
+                    <!-- </div> -->
                 </div>
               </div>
         </div>
@@ -68,10 +69,12 @@
             <h4>Classical</h4>
             <div class="product_section" w3-include-html="../components/cards/live_music/classical/classical_card_modal.html"></div>
 
-            <h4>Pop</h4>
+            <h4 id="anchor_link_dj">Pop</h4>
             <div class="product_section" w3-include-html="../components/cards/live_music/pop/pop_card_modal.html"></div>
             
-            <h4>DJ</h4>
+            <div class="container-fluid title_section_product">
+                <h2 id="anchor_link_photo_video">DJ</h2>
+            </div>
             <div class="product_section" w3-include-html="../components/cards/live_music/dj/dj_card_modal.html"></div>
 
             <!-- PHOTO & VIDEO SECTION -->

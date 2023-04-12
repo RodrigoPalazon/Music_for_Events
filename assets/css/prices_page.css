@@ -20,12 +20,10 @@
     font-family: 'Cutive Mono', monospace;
 }
 
-/* .description_section_product{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5px;
-} */
+main h4{
+    font-size: 40px;
+    text-shadow: #686660 4px 4px 5px;
+}
 
 .product_section{
     display: flex;
@@ -33,12 +31,12 @@
     flex-wrap: wrap;
     min-width: 100%;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 70px;
 }
 
 .card{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border: none;
     margin-bottom: 30px;
     box-shadow: -5px -5px 15px #76757588;
@@ -46,10 +44,8 @@
 
 .card img{
     width: 100%;
-    height: 200px;
+    height: 300px;
     overflow:unset;
-    /* filter:grayscale(100%); */
-    /* object-fit: cover; */
 }
 
 .card:hover {
@@ -57,14 +53,14 @@
 }
 
 .card:hover .card-body{
-    height: 200px;
+    height: 300px;
     background: rgba(37, 37, 37, 0.768);
     visibility:visible;
     color:rgb(240, 209, 10);
 }
 
 .card-body{
-    padding-top: 110px;
+    padding-top: 210px;
     visibility: hidden;
     position: absolute;
     width: 100%;
@@ -76,42 +72,52 @@
     font-weight: bold;
 }
 
-/* MODAL */
-/* .modal {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-} */
+.card-body .card-text{
+    font-family: var(--head-font-family);
+}
+
+.modal-backdrop{
+    z-index: 0;
+}
+
+.modal-body div .copyright_issued_link{
+    position: fixed;
+}
+
+.modal-body div a img{
+    background-color: black;
+    display: inline-block; 
+    height: 12rem;
+    width: 100%;
+}
 
 .modal-content{
     color: black;
-    /* margin-top: 5%; */
     background-color: #ffdb64eb;
-    /* width: 100vw;
-    height: 100%; */
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 
-/* .modal-body {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-} */
-
 .modal-body iframe {
-    /* width: 500px; */
     margin: 10px;
     height: 12rem;
     border-radius: 4%;
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-body img {
+    margin: 10px;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 4%;
+    filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 .modal_text{
@@ -128,7 +134,7 @@
 }
 
 .book_as_inner_container h5{
-    margin-left: -80px;
+    margin-bottom: 40px;
     font-family: var(--head-font-family);
 }
 
@@ -143,4 +149,100 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main h4{
+        font-size: 50px;
+    }
+    
+    p, .book_as_list{
+        font-size: 30px;
+    }
+
+    .book_as_list li{
+        padding: 0;
+    }
+    
+    .book_as_inner_container h5{
+        font-size: 30px;
+    }
+
+    .modal-body iframe {
+        margin: 10px;
+        height: 440px;
+        width: 440px;
+        border-radius: 4%;
+        filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
+    }
+
+    .modal-body div a img{
+        background-color: black;
+        display: inline-block; 
+        height: 520px;
+        width: 450px;
+    }
+
+    .book_as_inner_container h5{
+        font-size: 45px;
+    }
+
+    .book_as_inner_container .book_as_list{
+        font-size: 40px;
+    }
+
+    .book_as_outer_container p{
+        font-size: 40px;
+    }
+
+    .modal_text p{
+        font-size: 45px;
+    }
+
+    .modal-footer button{
+        font-size: 30px;
+    }
+
+
+    .card{
+        width: 700px;
+        height: 700px;
+        border: none;
+        margin-bottom: 80px;
+        box-shadow: -5px -5px 15px #76757588;
+    }
+    
+    .card img{
+        width: 100%;
+        height: 700px;
+        overflow:unset;
+    }
+    
+    .card:hover {
+        cursor: pointer;
+    }
+    
+    .card:hover .card-body{
+        height: 700px;
+        background: rgba(37, 37, 37, 0.768);
+        visibility:visible;
+        color:rgb(240, 209, 10);
+    }
+
+    .card-body{
+        padding-top: 510px;
+    }
+
+    .card-body h5, .card-body p{
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 768px){
+    .modal-dialog {
+        max-width: 860px;
+        margin: 1.75rem auto;
+    }
+
+    
 }
