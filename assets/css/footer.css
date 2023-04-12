@@ -2,23 +2,14 @@
     background-color: white;
 }
 
-.customers_logo img{
-    width: 130px;
-}
-
 .site-footer{
     padding:45px 0 20px;
     font-size:15px;
-    line-height:24px;
 }
 
 .site-footer hr{
     border-top-color:#bbb;
     opacity:0.5;
-}
-
-.site-footer hr.small{
-    margin:20px 0
 }
 
 .site-footer h6{
@@ -47,8 +38,6 @@
 }
 
 .horizontal_img img{
-    /* filter: grayscale(100%); */
-    /* width: 100px; */
     height: 40px;
 }
 
@@ -61,30 +50,8 @@
     text-decoration:none;
 }
 
-.footer-links{
-    padding-left:0;
-    list-style:none
-}
-
-.footer-links li{
-    display:block
-}
-
-.footer-links a{
-    color:#737373
-}
-
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
-    color:#3366cc;
-    text-decoration:none;
-}
-
-.footer-links.inline li{
-    display:inline-block
-}
-
-.site-footer .social-icons{
-    text-align:right
+.social-icons{
+    text-align:center;
 }
 
 .site-footer .social-icons a{
@@ -97,27 +64,8 @@
     background-color:#33353d
 }
 
-/* .copyright-text{
-    margin:0
-} */
-
 .social_media_icon{
     border-top: 2px solid rgba(156, 156, 156, 0.361);
-}
-
-@media (max-width:991px){
-    .site-footer [class^=col-]{
-        margin-bottom:30px
-    }
-}
-
-@media (max-width:767px){
-    .site-footer{
-        padding-bottom:0
-    }
-    .site-footer .copyright-text,.site-footer .social-icons{
-        text-align:center
-    }
 }
 
 .social-icons{
@@ -187,10 +135,37 @@
      background-color:#e52d27;
 }
 
-@media (max-width:767px){
-    .social-icons li.title{
-        display:block;
-        margin-right:0;
-        font-weight:600
+
+@media all and (max-width:767px){
+    .site-footer{
+        padding-bottom:0
     }
+    
+    .site-footer .copyright-text,.site-footer .social-icons{
+        text-align:center
+    }
+
+    .site-footer .social-icons ul li{
+        margin-right:0;
+        font-weight:600;
+        font-size: 500px;
+    }
+
+    .site-footer .social-icons a{
+        width:80px;
+        height:80px;
+        line-height:80px;
+        margin:12px;
+        border-radius:100%;
+        background-color:#33353d;
+        font-size:30px;
+    }
+
+    .site-footer h6 {
+        /* color: #fff; */
+        font-size: 20px;
+        /* text-transform: uppercase;
+        margin-top: 5px;
+        letter-spacing: 2px; */
+    }    
 }

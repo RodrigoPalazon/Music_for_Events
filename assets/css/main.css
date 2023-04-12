@@ -42,19 +42,20 @@ h2{
 }
 
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
+/* @media all and (min-width: 768px) and (max-width: 1023px)  */
+@media only screen and (max-width: 767px){
+    .navbar-toggler{
+        font-size: 30px;
+        padding: 10px;
+    }
+
     .nav-link{
-        font-size: 80px ;
+        font-size: 60px ;
         padding: 20px 0 ;
     }
 
-    .navbar-toggler{
-        font-size: 50px;
-        padding: 30px;
-    }
-
     #logo{
-        height: 124px;
+        height: 80px;
     }
 }
   
@@ -72,7 +73,6 @@ h2{
 
 
 .head {
-    /* background-image: url("/assets/images/big_band.jpg"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
