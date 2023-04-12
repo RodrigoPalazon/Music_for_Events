@@ -23,7 +23,6 @@
 main h4{
     font-size: 40px;
     text-shadow: #686660 4px 4px 5px;
-    /* margin-top: 30px; */
 }
 
 .product_section{
@@ -88,39 +87,28 @@ main h4{
 .modal-body div a img{
     background-color: black;
     display: inline-block; 
-    /* z-index: 100; */
     height: 12rem;
     width: 100%;
-    /* position: fixed; */
 }
 
 .modal-content{
     color: black;
-    /* margin-top: 5%; */
     background-color: #ffdb64eb;
-    /* width: 100vw;
-    height: 100%; */
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 
 .modal-body iframe {
-    /* width: 500px; */
     margin: 10px;
     height: 12rem;
     border-radius: 4%;
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
-
     background-size: cover;
     background-position: center;
 }
-
-
-
 
 .modal-body img {
     margin: 10px;
@@ -146,7 +134,7 @@ main h4{
 }
 
 .book_as_inner_container h5{
-    margin-left: -80px;
+    margin-bottom: 40px;
     font-family: var(--head-font-family);
 }
 
@@ -181,7 +169,6 @@ main h4{
     }
 
     .modal-body iframe {
-        /* width: 500px; */
         margin: 10px;
         height: 440px;
         width: 440px;
@@ -192,21 +179,70 @@ main h4{
     .modal-body div a img{
         background-color: black;
         display: inline-block; 
-        /* z-index: 100; */
         height: 520px;
         width: 450px;
-        /* position: fixed; */
     }
 
-    /* .modal-content {
-        width: 100vw !important;
-    } */
+    .book_as_inner_container h5{
+        font-size: 45px;
+    }
 
+    .book_as_inner_container .book_as_list{
+        font-size: 40px;
+    }
+
+    .book_as_outer_container p{
+        font-size: 40px;
+    }
+
+    .modal_text p{
+        font-size: 45px;
+    }
+
+    .modal-footer button{
+        font-size: 30px;
+    }
+
+
+    .card{
+        width: 700px;
+        height: 700px;
+        border: none;
+        margin-bottom: 80px;
+        box-shadow: -5px -5px 15px #76757588;
+    }
+    
+    .card img{
+        width: 100%;
+        height: 700px;
+        overflow:unset;
+    }
+    
+    .card:hover {
+        cursor: pointer;
+    }
+    
+    .card:hover .card-body{
+        height: 700px;
+        background: rgba(37, 37, 37, 0.768);
+        visibility:visible;
+        color:rgb(240, 209, 10);
+    }
+
+    .card-body{
+        padding-top: 510px;
+    }
+
+    .card-body h5, .card-body p{
+        font-size: 45px;
+    }
 }
 
-@media (min-width: 576px){
+@media (min-width: 768px){
     .modal-dialog {
         max-width: 860px;
         margin: 1.75rem auto;
     }
+
+    
 }
