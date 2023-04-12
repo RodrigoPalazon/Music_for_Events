@@ -49,9 +49,6 @@ a, a:hover{
 
 a:hover .card-text{
     display: inline-block;
-    /* opacity: 1; */
-    /* transition-delay: 1s; */
-    /* transition: all 1s ease; */
 }
 
 .having_fun p {
