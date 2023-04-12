@@ -191,6 +191,13 @@
     .social-icons li.title{
         display:block;
         margin-right:0;
-        font-weight:600
+        font-weight:600;
+        font-size: 500px;
     }
+
+    /* .spacing_img img{
+        filter: grayscale(100%);
+        width: 508px;
+        height: 100px;
+    } */
 }
