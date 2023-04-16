@@ -36,13 +36,10 @@ h2{
 } 
 
 .nav-link{
-    /* font-size: 1.2em; */
     font-size: 24px;
     color:rgb(193, 193, 193) !important;
 }
 
-
-/* @media all and (min-width: 768px) and (max-width: 1023px)  */
 @media only screen and (max-width: 767px){
     .navbar-toggler{
         font-size: 30px;
