@@ -40,6 +40,16 @@ main h4{
     border: none;
     margin-bottom: 30px;
     box-shadow: -5px -5px 15px #76757588;
+    /* padding-bottom: 10px; */
+}
+
+.card .card-title{
+    font-size: 25px;
+}
+
+.card .card-text{
+    font-size: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .card img{
@@ -88,7 +98,7 @@ main h4{
     background-color: black;
     display: inline-block; 
     height: 12rem;
-    width: 100%;
+    width: 97%;
 }
 
 .modal-content{
@@ -151,27 +161,32 @@ main h4{
     align-items: flex-start;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+.modal-body div a .phtographer_galery{
+    width: 20%;
+    height: 200px;
+}
+
+@media only screen and (max-width: 767px){
     main h4{
         font-size: 50px;
     }
+
+    .product_section{
+        margin-bottom: 40px;
+    }
     
-    p, .book_as_list{
+    .modal_text p{
         font-size: 30px;
     }
 
     .book_as_list li{
         padding: 0;
+        font-size: 25px;
     }
     
-    .book_as_inner_container h5{
-        font-size: 30px;
-    }
-
     .modal-body iframe {
-        margin: 10px;
-        height: 440px;
-        width: 440px;
+        height: 300px;
+        width: 90%;
         border-radius: 4%;
         filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
     }
@@ -179,24 +194,26 @@ main h4{
     .modal-body div a img{
         background-color: black;
         display: inline-block; 
-        height: 520px;
-        width: 450px;
+        height: 300px;
+        width: 90%;
+    }
+
+    .modal-body div a .phtographer_galery{
+        width: 90%;
+        height: 200px;
     }
 
     .book_as_inner_container h5{
-        font-size: 45px;
+        font-size: 30px;
     }
 
-    .book_as_inner_container .book_as_list{
-        font-size: 40px;
-    }
 
     .book_as_outer_container p{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .modal_text p{
-        font-size: 45px;
+        font-size: 25px;
     }
 
     .modal-footer button{
@@ -205,44 +222,24 @@ main h4{
 
 
     .card{
-        width: 700px;
-        height: 700px;
         border: none;
-        margin-bottom: 80px;
         box-shadow: -5px -5px 15px #76757588;
     }
     
-    .card img{
-        width: 100%;
-        height: 700px;
-        overflow:unset;
-    }
-    
-    .card:hover {
-        cursor: pointer;
-    }
-    
-    .card:hover .card-body{
-        height: 700px;
-        background: rgba(37, 37, 37, 0.768);
+    .card-body{
+        padding-top: 190px;
+        background: rgba(37, 37, 37, 0.559);
         visibility:visible;
         color:rgb(240, 209, 10);
-    }
-
-    .card-body{
-        padding-top: 510px;
+        height: 300px;
     }
 
     .card-body h5, .card-body p{
-        font-size: 45px;
+        font-size: 25px;
     }
-}
 
-@media (min-width: 768px){
     .modal-dialog {
         max-width: 860px;
         margin: 1.75rem auto;
     }
-
-    
 }
