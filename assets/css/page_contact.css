@@ -18,3 +18,9 @@
 .contact_info p{
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 767px){
+    .display-2{
+        font-size: 5rem;
+    }
+}
