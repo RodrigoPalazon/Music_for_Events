@@ -61,7 +61,7 @@
     margin-left:6px;
     margin-right:0;
     border-radius:100%;
-    background-color:#33353d
+    /* background-color:#33353d */
 }
 
 .social_media_icon{
@@ -88,8 +88,8 @@
 }
 
 .social-icons a{
-    background-color:#eceeef;
-    color:#818a91;
+    /* background-color:#eceeef; */
+    color:#eceeef;
     font-size:16px;
     display:inline-block;
     line-height:44px;
@@ -115,23 +115,23 @@
     font-size:14px
 }
 
-.social-icons a.facebook:hover{
-    background-color:#3b5998
+.social-icons a.facebook{
+    background-color:#4971c8
 }
 
-.social-icons a.twitter:hover{
+.social-icons a.twitter{
     background-color:#00aced
 }
 
-.social-icons a.instagram:hover{
+.social-icons a.instagram{
     background-color:#e527db;
 }
 
-.social-icons a.mail:hover{
+.social-icons a.mail{
     background-color:#ea4c89
 }
 
-.social-icons a.youtube:hover{
+.social-icons a.youtube{
      background-color:#e52d27;
 }
 
