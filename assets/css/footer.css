@@ -23,7 +23,8 @@
 .spacing_img {
     width: 120px;
     height: 120px;
-    background-color: #a9a9a9;
+    /* background-color: #a9a9a9; */
+    background-color: #ffffff;
 
     display: flex;
     justify-content: center;
@@ -32,7 +33,7 @@
 }
 
 .spacing_img img{
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     width: 100px;
     height: 100px;
 }
