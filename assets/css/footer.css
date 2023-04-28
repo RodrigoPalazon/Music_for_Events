@@ -23,7 +23,8 @@
 .spacing_img {
     width: 120px;
     height: 120px;
-    background-color: #a9a9a9;
+    /* background-color: #a9a9a9; */
+    background-color: #ffffff;
 
     display: flex;
     justify-content: center;
@@ -32,7 +33,7 @@
 }
 
 .spacing_img img{
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     width: 100px;
     height: 100px;
 }
@@ -89,7 +90,7 @@
 
 .social-icons a{
     background-color:#eceeef;
-    color:#818a91;
+    color:#eceeef;
     font-size:16px;
     display:inline-block;
     line-height:44px;
@@ -116,7 +117,7 @@
 }
 
 .social-icons a.facebook:hover{
-    background-color:#3b5998
+    background-color:#4971c8
 }
 
 .social-icons a.twitter:hover{
