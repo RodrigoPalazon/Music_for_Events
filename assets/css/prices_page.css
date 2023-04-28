@@ -112,10 +112,10 @@ main h4{
 .modal-body iframe {
     margin: 10px;
     height: 12rem;
-    border-radius: 4%;
+    /* border-radius: 4%;
     filter: drop-shadow(8px 10px 6px rgba(0, 0, 0, 0.773));
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 .modal-body img {
