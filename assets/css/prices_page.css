@@ -243,4 +243,29 @@ main h4{
         max-width: 860px;
         margin: 1.75rem auto;
     }
+
+    #anchor_link_photo_video::before {
+        content: '';
+        display: block;
+        height: 175px;
+        margin-top: -175px;
+        visibility: hidden;
+    }
+}
+
+#anchor_link_dj::before {
+    content: '';
+    display: block;
+    height: 175px;
+    margin-top: -175px;
+    visibility: hidden;
+}
+
+
+#anchor_link_photo_video::before {
+    content: '';
+    display: block;
+    height: 275px;
+    margin-top: -275px;
+    visibility: hidden;
 }
