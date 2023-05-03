@@ -12,7 +12,7 @@ html {
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;   
   }
   
   code {
@@ -98,6 +98,7 @@ html {
   
   #root {
     display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
   }

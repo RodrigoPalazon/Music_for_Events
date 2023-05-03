@@ -13,3 +13,5 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
     </BrowserRouter>
   </React.StrictMode>,
 )
+
+export default root;

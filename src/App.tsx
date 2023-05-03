@@ -7,26 +7,15 @@ import { Home } from './pages/home'
 import { About } from './pages/about'
 import { Contact } from './pages/contact'
 import { Price } from './pages/price'
+import Navbar from './components/navbar'
+
 
 function App() {
 //   const [count, setCount] = useState(0)
 
   return (
     <>
-        <nav>
-            <li>
-                <Link to='/'>Home</Link>
-            </li>
-            <li>
-                <Link to='/about'>About</Link>
-            </li>
-            <li>
-                <Link to='/price'>Price</Link>
-            </li>
-            <li>
-                <Link to='/contact'>Contact</Link>
-            </li>
-        </nav>
+        <Navbar/>
         <Routes>
             <Route path= '/about' element= {<About/>} />
             <Route path= '/contact' element= {<Contact/>} />
